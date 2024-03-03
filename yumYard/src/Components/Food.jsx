@@ -36,9 +36,9 @@ const Food = () => {
                 style={{ minWidth: "250px" }}
               >
                 <div className="h-64 bg-gray-200">
-                  <img src={_} alt="" className="h-64 w-auto"/>
+                  <img src={_} alt="" className=" h-64 w-auto object-cover" />
                 </div>
-                <div className="h-64 bg-gray-200 rounded-lg">Item {index + 1}</div>
+                {/* <div className="h-64 bg-gray-200 rounded-lg">Item {index + 1}</div> */}
               </div>
             ))}
           </div>
