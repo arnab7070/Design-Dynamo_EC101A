@@ -2,153 +2,46 @@ import React from "react";
 
 const Food = () => {
   return (
-    <section class="text-gray-600 body-font">
-      <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-wrap -m-4">
-          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <a class="block relative h-48 rounded overflow-hidden">
-              <img
-                alt="ecommerce"
-                class="object-cover object-center w-full h-full block"
-                src="https://dummyimage.com/420x260"
-              />
-            </a>
-            <div class="mt-4">
-              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                CATEGORY
-              </h3>
-              <h2 class="text-gray-900 title-font text-lg font-medium">
-                The Catalyzer
-              </h2>
-              <p class="mt-1">$16.00</p>
-            </div>
+    <section className="text-gray-600 body-font">
+      <div className="container px-5 py-24 mx-auto flex items-center ">
+        <div className="flex items-center justify-between w-full max-w-screen-lg overflow-x-auto">
+          {/* Left arrow button */}
+          <button
+            className="bg-gray-200 rounded-full p-2"
+            onClick={() => {
+              document.getElementById("food-container").scrollLeft -= 300;
+            }}
+          >
+            {"<"}
+          </button>
+
+          {/* Items container */}
+          <div
+            id="food-container"
+            className="flex space-x-4 flex-no-wrap overflow-x-auto"
+          >
+            {/* Your item cards */}
+            {[...Array(8)].map((_, index) => (
+              <div
+                key={index}
+                className="lg:w-1/4 md:w-1/2 p-4"
+                style={{ minWidth: "250px" }}
+              >
+                {/* Your item card */}
+                <div className="h-64 bg-gray-200">Item {index + 1}</div>
+              </div>
+            ))}
           </div>
-          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <a class="block relative h-48 rounded overflow-hidden">
-              <img
-                alt="ecommerce"
-                class="object-cover object-center w-full h-full block"
-                src="https://dummyimage.com/421x261"
-              />
-            </a>
-            <div class="mt-4">
-              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                CATEGORY
-              </h3>
-              <h2 class="text-gray-900 title-font text-lg font-medium">
-                Shooting Stars
-              </h2>
-              <p class="mt-1">$21.15</p>
-            </div>
-          </div>
-          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <a class="block relative h-48 rounded overflow-hidden">
-              <img
-                alt="ecommerce"
-                class="object-cover object-center w-full h-full block"
-                src="https://dummyimage.com/422x262"
-              />
-            </a>
-            <div class="mt-4">
-              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                CATEGORY
-              </h3>
-              <h2 class="text-gray-900 title-font text-lg font-medium">
-                Neptune
-              </h2>
-              <p class="mt-1">$12.00</p>
-            </div>
-          </div>
-          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <a class="block relative h-48 rounded overflow-hidden">
-              <img
-                alt="ecommerce"
-                class="object-cover object-center w-full h-full block"
-                src="https://dummyimage.com/423x263"
-              />
-            </a>
-            <div class="mt-4">
-              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                CATEGORY
-              </h3>
-              <h2 class="text-gray-900 title-font text-lg font-medium">
-                The 400 Blows
-              </h2>
-              <p class="mt-1">$18.40</p>
-            </div>
-          </div>
-          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <a class="block relative h-48 rounded overflow-hidden">
-              <img
-                alt="ecommerce"
-                class="object-cover object-center w-full h-full block"
-                src="https://dummyimage.com/424x264"
-              />
-            </a>
-            <div class="mt-4">
-              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                CATEGORY
-              </h3>
-              <h2 class="text-gray-900 title-font text-lg font-medium">
-                The Catalyzer
-              </h2>
-              <p class="mt-1">$16.00</p>
-            </div>
-          </div>
-          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <a class="block relative h-48 rounded overflow-hidden">
-              <img
-                alt="ecommerce"
-                class="object-cover object-center w-full h-full block"
-                src="https://dummyimage.com/425x265"
-              />
-            </a>
-            <div class="mt-4">
-              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                CATEGORY
-              </h3>
-              <h2 class="text-gray-900 title-font text-lg font-medium">
-                Shooting Stars
-              </h2>
-              <p class="mt-1">$21.15</p>
-            </div>
-          </div>
-          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <a class="block relative h-48 rounded overflow-hidden">
-              <img
-                alt="ecommerce"
-                class="object-cover object-center w-full h-full block"
-                src="https://dummyimage.com/427x267"
-              />
-            </a>
-            <div class="mt-4">
-              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                CATEGORY
-              </h3>
-              <h2 class="text-gray-900 title-font text-lg font-medium">
-                Neptune
-              </h2>
-              <p class="mt-1">$12.00</p>
-            </div>
-          </div>
-          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <a class="block relative h-48 rounded overflow-hidden">
-              <img
-                alt="ecommerce"
-                class="object-cover object-center w-full h-full block"
-                src="https://dummyimage.com/428x268"
-              />
-            </a>
-            <div class="mt-4">
-              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                CATEGORY
-              </h3>
-              <h2 class="text-gray-900 title-font text-lg font-medium">
-                The 400 Blows
-              </h2>
-              <p class="mt-1">$18.40</p>
-            </div>
-          </div>
+
+          {/* Right arrow button */}
+          <button
+            className="bg-gray-200 rounded-full p-2"
+            onClick={() => {
+              document.getElementById("food-container").scrollLeft += 300;
+            }}
+          >
+            {">"}
+          </button>
         </div>
       </div>
     </section>
