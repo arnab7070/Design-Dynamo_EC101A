@@ -7,7 +7,7 @@ const NumberSection = () => {
         Aos.init(
             {
                 offset: 200,
-                duration: 1000,
+                duration: 400,
                 easing: 'ease-in-back',
                 delay: 100,
             }
