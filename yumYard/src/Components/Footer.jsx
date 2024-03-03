@@ -9,7 +9,7 @@ const Footer = () => {
           {" "}
           <div class="relative">
             {" "}
-            <div class="bg-orange-300 p-3 space-y-10  md:grid md:grid-cols-2 md:-mt-6 lg:grid-cols-4">
+            <div class=" p-3 space-y-10  md:grid md:grid-cols-2 md:-mt-6 lg:grid-cols-4">
               {" "}
               <div class="w-1/2 md:ml-24 md:mt-9 md:w-3/4">
                 {" "}
@@ -152,7 +152,7 @@ const Footer = () => {
                   placeholder="Enter E-mail Here"
                   class="py-1 px-2 placeholder-gray-400 rounded-tl-xl focus: outline-none focus:border md:w-1/2 lg:w-3/5 border"
                 />{" "}
-                <button class="text-white bg-orange-500 p-1 -translate-x-1 rounded-br-xl">
+                <button class="text-white font-medium bg-orange-500 p-1 -translate-x-1 rounded-br-xl">
                   {" "}
                   Subscribe{" "}
                 </button>{" "}

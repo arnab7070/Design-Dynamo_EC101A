@@ -1,7 +1,6 @@
 import React from 'react'
 import { Navbar } from '../Components/Navbar'
 import { HeroSection } from '../Components/HeroSection'
-import Food from "../Components/Food"
 import ContactForm from "../Components/ContactForm"
 import FooterComponent from '../Components/Footer'
 import Services from '../Components/Services'
@@ -16,13 +15,12 @@ export const Home = () => {
                 <Navbar/>
                 <HeroSection/>
                 <NumberSection />
-                <Food/>
+                <FoodSection/>
                 <PricingCard/>
-                <ContactForm />
                 <Services />
+                <ContactForm />
                 <Testimonials/>
                 <FooterComponent/>
-                <FoodSection/>
             </div>
         </div>
     )

@@ -1,7 +1,7 @@
 import React from "react";
 // import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 
-const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, features }) => {
+const ProjectCard = ({ imgUrl, title, price, features }) => {
   return (
     <div>
       <div className="shadow-lg shadow-orange-300 rounded-xl mb-8">
@@ -12,7 +12,10 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, features 
         </div>
         <div className="text-black rounded-b-xl py-6 px-4">
           <h5 className="text-xl font-semibold mb-2">{title}</h5>
-          <p className="text-gray-700">{description}</p>
+          <div className="flex justify-between">
+            <p className="text-gray-900 text-2xl font-bold">₹ {price}</p>
+            <p className="px-4 py-2 rounded-md bg-orange-500 text-white cursor-pointer shadow-md shadow-orange-300">Order Now</p>
+          </div>
           {
             features.map((element, index) => (
               <span key={index} className="mt-3 py-1 px-2 inline-flex items-center gap-x-1 me-2 text-xs font-medium rounded-full bg-orange-500/10 text-orange-500">

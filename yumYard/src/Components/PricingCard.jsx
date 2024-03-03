@@ -6,8 +6,8 @@ const PricingCard = () => {
     useEffect(() => {
         Aos.init(
             {
-                offset: 300,
-                duration: 500,
+                offset: 200,
+                duration: 1000,
                 easing: 'ease-in-back',
                 delay: 100,
             }

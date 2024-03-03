@@ -18,7 +18,7 @@ const projectsData = [
   {
     id: 0,
     title: "Special Masala Dosa",
-    description: "Course Management Website having Spam Detection & auto Quiz Generator System using ML",
+    price: "150/-",
     image: pic1,
     tag: ["All", "Veg"],
     features: ["South Indian", "Breakfast", "Vegetarian"],
@@ -26,7 +26,7 @@ const projectsData = [
   {
     id: 1,
     title: "Rapid Reader",
-    description: "News & Books Summarizer website using Next JS, Redis, OpenAI and Gemini API",
+    price: "News & Books Summarizer website using Next JS, Redis, OpenAI and Gemini API",
     image: pic2,
     tag: ["All", "Veg"],
     features: ["NextJS", "MongoDB", "Redis", "ML", "GeminiAI"],
@@ -34,7 +34,7 @@ const projectsData = [
   {
     id: 2,
     title: "Syntax Valley Blog Website",
-    description: "A content management system using Next JS & MongoDB as backend",
+    price: "A content management system using Next JS & MongoDB as backend",
     image: pic3,
     tag: ["All", "Veg"],
     features: ["NextJS", "MongoDB", "Tailwind CSS", "AOS"],
@@ -42,7 +42,7 @@ const projectsData = [
   {
     id: 3,
     title: "Dream Tracker using Flutter & Firebase",
-    description: "Application that empowers you to achieve your goals, & make smart investments",
+    price: "Application that empowers you to achieve your goals, & make smart investments",
     image: pic4,
     tag: ["All", "Veg"],
     features: ["Flutter", "Firebase Authentication", "Firestore"],
@@ -50,7 +50,7 @@ const projectsData = [
   {
     id: 4,
     title: "Code World using HUGO framework",
-    description: "Coding blog website having lots of DSA concepts and solution of DSA problems",
+    price: "Coding blog website having lots of DSA concepts and solution of DSA problems",
     image: pic5,
     tag: ["All", "Veg"],
     features: ["HUGO", "Markdown", "SEO Friendly"],
@@ -58,7 +58,7 @@ const projectsData = [
   {
     id: 5,
     title: "Rhythm using Flutter",
-    description: "Open-Source Music App and MP3 player for your entertainment",
+    price: "Open-Source Music App and MP3 player for your entertainment",
     image: pic6,
     tag: ["All", "Veg"],
     features: ["Flutter", "Firebase", "Scraping", "User Friendly UI"],
@@ -66,7 +66,7 @@ const projectsData = [
   {
     id: 6,
     title: "Codeforces 2.0",
-    description: "Better UI implementation for codeforces website using HTML, bootstrap css and Codeforces API",
+    price: "Better UI implementation for codeforces website using HTML, bootstrap css and Codeforces API",
     image: pic7,
     tag: ["All", "Veg"],
     features: ["HTML, CSS, Javascript", "Codeforces API", "Bootstrap"],
@@ -74,7 +74,7 @@ const projectsData = [
   {
     id: 7,
     title: "URL Shortener",
-    description: "Short URL generator website using Next JS and MongoDB for storing URL stats",
+    price: "Short URL generator website using Next JS and MongoDB for storing URL stats",
     image: pic8,
     tag: ["All", "Veg"],
     features: ["NextJS", "TailwindCSS", "MongoDB", "Rest API"],
@@ -82,7 +82,7 @@ const projectsData = [
   {
     id: 8,
     title: "Contest Calendar",
-    description: "Mobile appliaction using Flutter that can track all upcoming Contests using API",
+    price: "Mobile appliaction using Flutter that can track all upcoming Contests using API",
     image: pic9,
     tag: ["All", "Veg"],
     features: ["Flutter", "Kontests API", "Minimal UI Design"],
@@ -90,7 +90,7 @@ const projectsData = [
   {
     id: 9,
     title: "Portfolio Website: 1",
-    description: "Professional Portfolio Website Utilizing Bootstrap CSS",
+    price: "Professional Portfolio Website Utilizing Bootstrap CSS",
     image: pic10,
     tag: ["All", "Veg"],
     features: ["Bootstrap", "HTML", "CSS", "Javascript"],
@@ -117,7 +117,7 @@ const FoodSection = () => {
 
   return (
     <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-black mt-4 mb-8 md:mb-12">
+      <h2 className="text-center text-5xl font-bold text-orange-500 mt-4 mb-8 md:mb-12">
         Our Menu
       </h2>
       <div className="text-black flex flex-row justify-center items-center gap-2 py-6">
@@ -149,7 +149,7 @@ const FoodSection = () => {
             <ProjectCard
               key={project.id}
               title={project.title}
-              description={project.description}
+              price={project.price}
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
