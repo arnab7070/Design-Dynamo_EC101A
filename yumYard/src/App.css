@@ -1,5 +1,4 @@
 .home{
-  background-color: #FCBF49;
   min-height: 100vh;
   max-height: 100%;
   display: flex;
@@ -9,5 +8,5 @@
 .main{
   background-color: #EAE2B7;
   height: 90vh;
-  width: 95%;
+  width: 100%;
 }
