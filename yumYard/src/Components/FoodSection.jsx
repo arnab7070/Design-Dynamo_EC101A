@@ -13,6 +13,16 @@ import pic7 from "../Images/veg/pic7.jpg"
 import pic8 from "../Images/veg/pic8.jpg"
 import pic9 from "../Images/veg/pic9.jpg"
 import pic10 from "../Images/veg/pic10.jpg"
+import pic11 from "../Images/non veg/pic1.jpg"
+import pic12 from "../Images/non veg/pic2.jpg"
+import pic13 from "../Images/non veg/pic3.jpg"
+import pic14 from "../Images/non veg/pic4.jpg"
+import pic15 from "../Images/non veg/pic5.jpg"
+import pic16 from "../Images/non veg/pic6.jpg"
+import pic17 from "../Images/non veg/pic7.jpg"
+import pic18 from "../Images/non veg/pic8.jpg"
+import pic19 from "../Images/non veg/pic9.jpg"
+import pic20 from "../Images/non veg/pic10.jpg"
 
 const projectsData = [
   {
@@ -95,6 +105,86 @@ const projectsData = [
     tag: ["All", "Veg"],
     features: ["Bootstrap", "HTML", "CSS", "Javascript"],
   },
+  {
+    id: 10,
+    title: "Mutton Kosha",
+    price: "340",
+    image: pic11,
+    tag: ["All", "Non-Veg"],
+    features: ["Non Veg", "Gravy"],
+  },
+  {
+    id: 11,
+    title: "Fish Kalia",
+    price: "150",
+    image: pic12,
+    tag: ["All", "Non-Veg"],
+    features: ["Non Veg", "Main Course"],
+  },
+  {
+    id: 12,
+    title: "Chicken Rogan Josh",
+    price: "180",
+    image: pic13,
+    tag: ["All", "Non-Veg"],
+    features: ["Non Veg", "Main Course"],
+  },
+  {
+    id: 13,
+    title: "Pomplete Fish Roast",
+    price: "350",
+    image: pic14,
+    tag: ["All", "Non-Veg"],
+    features: ["Non Veg", "Main Course"],
+  },
+  {
+    id: 14,
+    title: "Hyderabadi Chicken Biryani",
+    price: "450",
+    image: pic15,
+    tag: ["All", "Non-Veg"],
+    features: ["Non Veg", "Main Course"],
+  },
+  {
+    id: 15,
+    title: "Mutton Rogan Josh",
+    price: "400",
+    image: pic16,
+    tag: ["All", "Non-Veg"],
+    features: ["Non Veg", "Main Course"],
+  },
+  {
+    id: 16,
+    title: "Chicken Munchurian",
+    price: "330",
+    image: pic17,
+    tag: ["All", "Non-Veg"],
+    features: ["Non Veg", "Main Course"],
+  },
+  {
+    id: 17,
+    title: "Egg Curry",
+    price: "300",
+    image: pic18,
+    tag: ["All", "Non-Veg"],
+    features: ["Non Veg", "Main Course", "Gravy"],
+  },
+  {
+    id: 18,
+    title: "Baked pork chops",
+    price: "200",
+    image: pic19,
+    tag: ["All", "Non-Veg"],
+    features: ["Non Veg", "Starter"],
+  },
+  {
+    id: 19,
+    title: "Chicken Cutlet",
+    price: "130",
+    image: pic20,
+    tag: ["All", "Non-Veg"],
+    features: ["Non Veg", "Starter"],
+  },
 ];
 
 const FoodSection = () => {
@@ -137,7 +227,7 @@ const FoodSection = () => {
           isSelected={tag === "Non-Veg"}
         />
       </div>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-x-3 gap-y-8 md:gap-8 md:mx-10 mx-2">
+      <ul ref={ref} className="grid md:grid-cols-4 gap-x-3 gap-y-8 md:gap-8 md:mx-10 mx-2">
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}
