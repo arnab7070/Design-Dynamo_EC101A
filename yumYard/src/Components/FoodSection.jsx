@@ -28,7 +28,7 @@ const projectsData = [
   {
     id: 0,
     title: "Special Masala Dosa",
-    price: "150/-",
+    price: "150",
     image: pic1,
     tag: ["All", "Veg"],
     features: ["South Indian", "Breakfast"],
