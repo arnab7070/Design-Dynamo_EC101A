@@ -39,7 +39,7 @@ const projectsData = [
     price: "220",
     image: pic2,
     tag: ["All", "Veg"],
-    features: ["NextJS", "MongoDB", "Redis"],
+    features: ["North Indian", "Gravy"],
   },
   {
     id: 2,
@@ -47,7 +47,7 @@ const projectsData = [
     price: "150",
     image: pic3,
     tag: ["All", "Veg"],
-    features: ["NextJS", "MongoDB", "Tailwind CSS"],
+    features: ["Starter"],
   },
   {
     id: 3,
@@ -55,7 +55,7 @@ const projectsData = [
     price: "140",
     image: pic4,
     tag: ["All", "Veg"],
-    features: ["Flutter", "Firebase Authentication"],
+    features: ["South Indian", "Breakfast"],
   },
   {
     id: 4,
@@ -63,7 +63,7 @@ const projectsData = [
     price: "120",
     image: pic5,
     tag: ["All", "Veg"],
-    features: ["HUGO", "Markdown", "SEO Friendly"],
+    features: ["Gujrati", "Breakfast"],
   },
   {
     id: 5,
@@ -71,7 +71,7 @@ const projectsData = [
     price: "100",
     image: pic6,
     tag: ["All", "Veg"],
-    features: ["Flutter", "Firebase", "Scraping"],
+    features: ["Gujrati", "Breakfast"],
   },
   {
     id: 6,
@@ -79,7 +79,7 @@ const projectsData = [
     price: "300",
     image: pic7,
     tag: ["All", "Veg"],
-    features: ["HTML, CSS, Javascript", "Codeforces API"],
+    features: ["South Indian", "Breakfast"],
   },
   {
     id: 7,
@@ -87,7 +87,7 @@ const projectsData = [
     price: "250",
     image: pic8,
     tag: ["All", "Veg"],
-    features: ["NextJS", "TailwindCSS", "MongoDB"],
+    features: ["North Indian", "Gravy"],
   },
   {
     id: 8,
@@ -95,7 +95,7 @@ const projectsData = [
     price: "60",
     image: pic9,
     tag: ["All", "Veg"],
-    features: ["Flutter", "Kontests API"],
+    features: ["Breakfast"],
   },
   {
     id: 9,
@@ -103,7 +103,7 @@ const projectsData = [
     price: "40",
     image: pic10,
     tag: ["All", "Veg"],
-    features: ["Bootstrap", "HTML", "CSS"],
+    features: ["Snacks"],
   },
   {
     id: 10,
