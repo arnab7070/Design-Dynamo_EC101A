@@ -31,7 +31,7 @@ const projectsData = [
     price: "150/-",
     image: pic1,
     tag: ["All", "Veg"],
-    features: ["South Indian", "Breakfast", "Vegetarian"],
+    features: ["South Indian", "Breakfast"],
   },
   {
     id: 1,
@@ -39,7 +39,7 @@ const projectsData = [
     price: "220",
     image: pic2,
     tag: ["All", "Veg"],
-    features: ["NextJS", "MongoDB", "Redis", "ML", "GeminiAI"],
+    features: ["NextJS", "MongoDB", "Redis"],
   },
   {
     id: 2,
@@ -47,7 +47,7 @@ const projectsData = [
     price: "150",
     image: pic3,
     tag: ["All", "Veg"],
-    features: ["NextJS", "MongoDB", "Tailwind CSS", "AOS"],
+    features: ["NextJS", "MongoDB", "Tailwind CSS"],
   },
   {
     id: 3,
@@ -55,7 +55,7 @@ const projectsData = [
     price: "140",
     image: pic4,
     tag: ["All", "Veg"],
-    features: ["Flutter", "Firebase Authentication", "Firestore"],
+    features: ["Flutter", "Firebase Authentication"],
   },
   {
     id: 4,
@@ -71,7 +71,7 @@ const projectsData = [
     price: "100",
     image: pic6,
     tag: ["All", "Veg"],
-    features: ["Flutter", "Firebase", "Scraping", "User Friendly UI"],
+    features: ["Flutter", "Firebase", "Scraping"],
   },
   {
     id: 6,
@@ -79,7 +79,7 @@ const projectsData = [
     price: "300",
     image: pic7,
     tag: ["All", "Veg"],
-    features: ["HTML, CSS, Javascript", "Codeforces API", "Bootstrap"],
+    features: ["HTML, CSS, Javascript", "Codeforces API"],
   },
   {
     id: 7,
@@ -87,7 +87,7 @@ const projectsData = [
     price: "250",
     image: pic8,
     tag: ["All", "Veg"],
-    features: ["NextJS", "TailwindCSS", "MongoDB", "Rest API"],
+    features: ["NextJS", "TailwindCSS", "MongoDB"],
   },
   {
     id: 8,
@@ -95,7 +95,7 @@ const projectsData = [
     price: "60",
     image: pic9,
     tag: ["All", "Veg"],
-    features: ["Flutter", "Kontests API", "Minimal UI Design"],
+    features: ["Flutter", "Kontests API"],
   },
   {
     id: 9,
@@ -103,7 +103,7 @@ const projectsData = [
     price: "40",
     image: pic10,
     tag: ["All", "Veg"],
-    features: ["Bootstrap", "HTML", "CSS", "Javascript"],
+    features: ["Bootstrap", "HTML", "CSS"],
   },
   {
     id: 10,
