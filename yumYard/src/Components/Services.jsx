@@ -7,7 +7,7 @@ const Services = () => {
         Aos.init(
             {
                 offset: 300,
-                duration: 3000,
+                duration: 400,
                 easing: 'ease-in',
                 delay: 100,
             }
