@@ -1,25 +1,37 @@
 import React from "react";
-
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 const Testimonials = () => {
+  useEffect(() => {
+    Aos.init(
+      {
+        offset: 300,
+        duration: 1000,
+        easing: 'ease-in',
+        delay: 100,
+      }
+    );
+  }, [])
   const gradientColors = {
     background:
-      "linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%)",
+      "linear-gradient(90deg, #ff9444 -0.55%, #ff9444 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%)",
   };
 
   return (
     <section className="py-12 sm:py-16 lg:py-20">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="flex flex-col items-center">
-          <div className="text-center">
+          <div data-aos="fade-down" className="text-center">
             <p className="text-lg font-medium text-gray-600 font-pj">
               2,157 people have said how good Rareblocks
             </p>
-            <h2 className="mt-4 text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj">
+            <h2 data-aos="fade-down" className="mt-4 text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj">
               What our happy clients say about us
             </h2>
           </div>
 
-          <div className="mt-8 text-center md:mt-16 md:order-3">
+          <div data-aos="fade-up" className="mt-8 text-center md:mt-16 md:order-3">
             <a
               href="#"
               title=""
@@ -38,7 +50,7 @@ const Testimonials = () => {
             </div>
 
             <div class="relative grid max-w-lg grid-cols-1 gap-6 mx-auto md:max-w-none lg:gap-10 md:grid-cols-3">
-              <div class="flex flex-col overflow-hidden shadow-xl">
+              <div data-aos="flip-up" class="flex flex-col overflow-hidden shadow-xl">
                 <div class="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7">
                   <div class="flex-1">
                     <div class="flex items-center">
@@ -111,7 +123,7 @@ const Testimonials = () => {
                 </div>
               </div>
 
-              <div class="flex flex-col overflow-hidden shadow-xl">
+              <div data-aos="flip-up" class="flex flex-col overflow-hidden shadow-xl">
                 <div class="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7">
                   <div class="flex-1">
                     <div class="flex items-center">
@@ -183,7 +195,7 @@ const Testimonials = () => {
                 </div>
               </div>
 
-              <div class="flex flex-col overflow-hidden shadow-xl">
+              <div data-aos="flip-up" class="flex flex-col overflow-hidden shadow-xl">
                 <div class="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7">
                   <div class="flex-1">
                     <div class="flex items-center">
