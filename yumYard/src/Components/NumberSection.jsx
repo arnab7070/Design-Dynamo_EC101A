@@ -14,7 +14,7 @@ const NumberSection = () => {
         );
     }, [])
     return (
-        <section class="text-gray-600 body-font mt-20" data-aos="fade-up">
+        <section class="text-gray-600 body-font mt-10" data-aos="fade-up">
             <div class="container px-5 py-24 mx-auto">
                 <div class="flex flex-wrap -m-4 text-center">
                     <div class="p-4 sm:w-1/4 w-1/2">
