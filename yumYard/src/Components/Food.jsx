@@ -14,7 +14,7 @@ const Food = () => {
   ]
 
   return (
-    <section className="text-gray-600 body-font pt-40">
+    <section className="text-gray-600 body-font">
       <div className="container px-5 py-24 mx-auto flex items-center">
         <div className="flex items-center justify-between w-full overflow-x-auto">
           <button

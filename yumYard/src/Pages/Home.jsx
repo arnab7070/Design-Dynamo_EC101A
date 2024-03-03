@@ -7,6 +7,7 @@ import FooterComponent from '../Components/Footer'
 import Services from '../Components/Services'
 import PricingCard from '../Components/PricingCard'
 import NumberSection from '../Components/NumberSection'
+import Testimonials from '../Components/Testimonials'
 export const Home = () => {
     return (
         <div className='home'>
@@ -18,6 +19,7 @@ export const Home = () => {
                 <PricingCard/>
                 <ContactForm />
                 <Services />
+                <Testimonials/>
                 <FooterComponent/>
             </div>
         </div>
