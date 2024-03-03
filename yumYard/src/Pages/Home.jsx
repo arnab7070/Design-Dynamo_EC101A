@@ -7,6 +7,7 @@ import FooterComponent from '../Components/Footer'
 import Services from '../Components/Services'
 import PricingCard from '../Components/PricingCard'
 import NumberSection from '../Components/NumberSection'
+import FoodSection from '../Components/FoodSection'
 export const Home = () => {
     return (
         <div className='home'>
@@ -19,6 +20,7 @@ export const Home = () => {
                 <ContactForm />
                 <Services />
                 <FooterComponent/>
+                <FoodSection/>
             </div>
         </div>
     )
