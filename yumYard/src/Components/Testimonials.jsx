@@ -7,9 +7,9 @@ const Testimonials = () => {
     Aos.init(
       {
         offset: 300,
-        duration: 1000,
+        duration: 400,
         easing: 'ease-in',
-        delay: 100,
+        delay: 200,
       }
     );
   }, [])

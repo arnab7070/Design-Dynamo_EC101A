@@ -1,42 +1,69 @@
-import React from 'react'
-import { useEffect } from 'react'
-import Aos from 'aos'
-import 'aos/dist/aos.css'
+import React, { useEffect, useRef, useState } from 'react';
+import CountUp from 'react-countup';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 const NumberSection = () => {
+    const sectionRef = useRef(null);
+    const [isVisible, setIsVisible] = useState(false);
+
     useEffect(() => {
-        Aos.init(
-            {
-                offset: 200,
-                duration: 400,
-                easing: 'ease-in-back',
-                delay: 100,
+        Aos.init({
+            offset: 200,
+            duration: 400,
+            easing: 'ease-in-back',
+            delay: 100,
+        });
+
+        const scrollHandler = () => {
+            if (sectionRef.current) {
+                const topOffset = sectionRef.current.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                if (topOffset < windowHeight * 0.75) {
+                    setIsVisible(true);
+                }
             }
-        );
-    }, [])
+        };
+
+        window.addEventListener('scroll', scrollHandler);
+
+        return () => {
+            window.removeEventListener('scroll', scrollHandler);
+        };
+    }, []);
+
     return (
-        <section class="text-gray-600 body-font mt-10" data-aos="fade-up">
-            <div class="container px-5 py-24 mx-auto">
-                <div class="flex flex-wrap -m-4 text-center">
-                    <div class="p-4 sm:w-1/4 w-1/2">
-                        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">5.7K</h2>
-                        <p class="leading-relaxed">Clients</p>
+        <section ref={sectionRef} className="text-gray-600 body-font mt-10" style={{ background: 'linear-gradient(45deg, #FFA300, #FF6000)' }}>
+            <div className="container px-5 py-24 mx-auto">
+                <div className="flex flex-wrap -m-4 text-center">
+                    <div className="p-4 sm:w-1/4 w-1/2">
+                        <h2 className="title-font font-medium sm:text-4xl text-3xl text-gray-900">
+                            {isVisible && <CountUp start={0} end={5700} duration={4} suffix="+" />}
+                        </h2>
+                        <p className="leading-relaxed">Clients</p>
                     </div>
-                    <div class="p-4 sm:w-1/4 w-1/2">
-                        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">2.8K</h2>
-                        <p class="leading-relaxed">Subscribers</p>
+                    <div className="p-4 sm:w-1/4 w-1/2">
+                        <h2 className="title-font font-medium sm:text-4xl text-3xl text-gray-900">
+                            {isVisible && <CountUp start={0} end={2800} duration={4} suffix="+" />}
+                        </h2>
+                        <p className="leading-relaxed">Subscribers</p>
                     </div>
-                    <div class="p-4 sm:w-1/4 w-1/2">
-                        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">35K+</h2>
-                        <p class="leading-relaxed">Order Delivered</p>
+                    <div className="p-4 sm:w-1/4 w-1/2">
+                        <h2 className="title-font font-medium sm:text-4xl text-3xl text-gray-900">
+                            {isVisible && <CountUp start={0} end={35000} duration={4} suffix="+" />}
+                        </h2>
+                        <p className="leading-relaxed">Order Delivered</p>
                     </div>
-                    <div class="p-4 sm:w-1/4 w-1/2">
-                        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">350+</h2>
-                        <p class="leading-relaxed">Food Partners</p>
+                    <div className="p-4 sm:w-1/4 w-1/2">
+                        <h2 className="title-font font-medium sm:text-4xl text-3xl text-gray-900">
+                            {isVisible && <CountUp start={0} end={350} duration={4} suffix="+" />}
+                        </h2>
+                        <p className="leading-relaxed">Food Partners</p>
                     </div>
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default NumberSection
+export default NumberSection;

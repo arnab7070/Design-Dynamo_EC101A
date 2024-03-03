@@ -14,10 +14,10 @@ export const Home = () => {
             <div className="main">
                 <Navbar/>
                 <HeroSection/>
-                <NumberSection />
                 <FoodSection/>
                 <PricingCard/>
                 <Services />
+                <NumberSection />
                 <ContactForm />
                 <Testimonials/>
                 <FooterComponent/>

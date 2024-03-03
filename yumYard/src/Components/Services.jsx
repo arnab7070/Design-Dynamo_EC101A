@@ -9,7 +9,7 @@ const Services = () => {
                 offset: 300,
                 duration: 400,
                 easing: 'ease-in',
-                delay: 100,
+                delay: 200,
             }
         );
     }, [])
