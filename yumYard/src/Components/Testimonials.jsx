@@ -6,8 +6,8 @@ const Testimonials = () => {
   useEffect(() => {
     Aos.init(
       {
-        offset: 300,
-        duration: 400,
+        offset: 500,
+        duration: 1000,
         easing: 'ease-in',
         delay: 200,
       }
