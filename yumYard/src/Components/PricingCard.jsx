@@ -7,7 +7,7 @@ const PricingCard = () => {
         Aos.init(
             {
                 offset: 300,
-                duration: 800,
+                duration: 500,
                 easing: 'ease-in-back',
                 delay: 100,
             }
