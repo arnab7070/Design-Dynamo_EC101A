@@ -15,19 +15,19 @@ const Footer = () => {
                 {" "}
                 <h1 class="text-black text-xl font-medium">Company</h1>{" "}
                 <br />{" "}
-                <p class="text-gray-700 font-medium text-base hover:text-orange-600 ">
+                <p class="text-gray-700 font-medium text-base hover:text-orange-500 ">
                   {" "}
                   A123 Lost Street <br /> Chandigarh, PB 535022 <br />India{" "}
                 </p>{" "}
                 <br />{" "}
-                <p class="text-gray-700 font-medium text-base hover:text-orange-600 cursor-pointer">
+                <p class="text-gray-700 font-medium text-base hover:text-orange-500 cursor-pointer">
                   {" "}
                   <strong class="tracking-wide text-black font-normal">
                     Phone:
                   </strong>{" "}
                   +91 7008090111{" "}
                 </p>{" "}
-                <p class="text-gray-700 font-medium text-base hover:text-orange-600 cursor-pointer">
+                <p class="text-gray-700 font-medium text-base hover:text-orange-500 cursor-pointer">
                   {" "}
                   <strong class="tracking-wide text-black font-normal">
                     Email:
@@ -46,7 +46,7 @@ const Footer = () => {
                   <li>
                     {" "}
                     <i class="fa fa-chevron-right text-black"></i>{" "}
-                    <a href="#" class="hover:text-orange-600">
+                    <a href="#" class="hover:text-orange-500">
                       {" "}
                       Home
                     </a>{" "}
@@ -54,7 +54,7 @@ const Footer = () => {
                   <li>
                     {" "}
                     <i class="fa fa-chevron-right text-black"></i>{" "}
-                    <a href="#" class="hover:text-orange-600">
+                    <a href="#" class="hover:text-orange-500">
                       {" "}
                       About Us
                     </a>{" "}
@@ -62,7 +62,7 @@ const Footer = () => {
                   <li>
                     {" "}
                     <i class="fa fa-chevron-right text-black"></i>{" "}
-                    <a href="#" class="hover:text-orange-600">
+                    <a href="#" class="hover:text-orange-500">
                       {" "}
                       Services
                     </a>{" "}
@@ -70,7 +70,7 @@ const Footer = () => {
                   <li>
                     {" "}
                     <i class="fa fa-chevron-right text-black"></i>{" "}
-                    <a href="#" class="hover:text-orange-600">
+                    <a href="#" class="hover:text-orange-500">
                       {" "}
                       Terms of service
                     </a>{" "}
@@ -78,7 +78,7 @@ const Footer = () => {
                   <li>
                     {" "}
                     <i class="fa fa-chevron-right text-black"></i>{" "}
-                    <a href="#" class="hover:text-orange-600">
+                    <a href="#" class="hover:text-orange-500">
                       {" "}
                       Privacy policy
                     </a>{" "}
@@ -96,7 +96,7 @@ const Footer = () => {
                   <li>
                     {" "}
                     <i class="fa fa-chevron-right text-black"></i>{" "}
-                    <a href="#" class="hover:text-orange-600">
+                    <a href="#" class="hover:text-orange-500">
                       {" "}
                       Web Design
                     </a>{" "}
@@ -104,7 +104,7 @@ const Footer = () => {
                   <li>
                     {" "}
                     <i class="fa fa-chevron-right text-black"></i>{" "}
-                    <a href="#" class="hover:text-orange-600">
+                    <a href="#" class="hover:text-orange-500">
                       {" "}
                       Web Development
                     </a>{" "}
@@ -112,7 +112,7 @@ const Footer = () => {
                   <li>
                     {" "}
                     <i class="fa fa-chevron-right text-black"></i>{" "}
-                    <a href="#" class="hover:text-orange-600">
+                    <a href="#" class="hover:text-orange-500">
                       {" "}
                       Product Management
                     </a>{" "}
@@ -120,7 +120,7 @@ const Footer = () => {
                   <li>
                     {" "}
                     <i class="fa fa-chevron-right text-black"></i>{" "}
-                    <a href="#" class="hover:text-orange-600">
+                    <a href="#" class="hover:text-orange-500">
                       {" "}
                       Marketing
                     </a>{" "}
@@ -128,7 +128,7 @@ const Footer = () => {
                   <li>
                     {" "}
                     <i class="fa fa-chevron-right text-black"></i>{" "}
-                    <a href="#" class="hover:text-orange-600">
+                    <a href="#" class="hover:text-orange-500">
                       {" "}
                       Graphic Design
                     </a>{" "}
@@ -150,9 +150,9 @@ const Footer = () => {
                 <input
                   type="email"
                   placeholder="Enter E-mail Here"
-                  class="py-1 px-2 placeholder-gray-400 rounded-tl-xl focus: outline-none focus:bordermd:w-1/2 lg:w-3/5 border"
+                  class="py-1 px-2 placeholder-gray-400 rounded-tl-xl focus: outline-none focus:border md:w-1/2 lg:w-3/5 border"
                 />{" "}
-                <button class="text-white bg-blue-600 p-1 -translate-x-1 rounded-br-xl hover:bg-blue-500">
+                <button class="text-white bg-orange-500 p-1 -translate-x-1 rounded-br-xl">
                   {" "}
                   Subscribe{" "}
                 </button>{" "}
@@ -207,6 +207,7 @@ const Footer = () => {
         </div>{" "}
       </div>
     </div>
+
   );
 };
 
