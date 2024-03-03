@@ -5,11 +5,11 @@ const Footer = () => {
     <div>
       <div class=" flex items-center justify-around">
         {" "}
-        <div class=" m-2 items-start relative w-full flex flex-row justify-between mt-8">
+        <div class="items-start relative w-full flex flex-row justify-between mt-8">
           {" "}
           <div class="relative">
             {" "}
-            <div class="bg-white p-3 space-y-10 md:grid md:grid-cols-2 md:-mt-6 lg:grid-cols-4">
+            <div class="bg-[#f8deca] p-3 space-y-10  md:grid md:grid-cols-2 md:-mt-6 lg:grid-cols-4">
               {" "}
               <div class="w-1/2 md:ml-24 md:mt-9 md:w-3/4">
                 {" "}
@@ -158,7 +158,7 @@ const Footer = () => {
                 </button>{" "}
               </div>{" "}
             </div>{" "}
-            <div class="md:flex hidden bg-gray-900 p-3 flex-col text-center pt-5 space-y-8 md:flex-row md:justify-between md:space-y-0">
+            <div class="md:flex bg-[#ff8324] p-3 flex-col text-center pt-5 space-y-8 md:flex-row md:justify-between md:space-y-0">
               {" "}
               <div class="flex mx-3 justify-between space-x-20 md:flex-row text-gray-200 md:space-x-28 md:ml-20 lg:ml-24 lg:space-x-[13rem] xl:space-x-72 xl:ml-24">
                 {" "}

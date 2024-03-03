@@ -13,7 +13,15 @@ const ContactForm = () => {
     }, []);
 
     return (
-        <div className="visme_d" data-title="Contact Form" data-url="dm0xvwq1-contact-form" data-domain="forms" data-full-page="false" data-min-height="500px" data-form-id="37569"></div>
+        <div className="visme_d" 
+            data-title="Contact Form" 
+            data-url="dm0xvwq1-contact-form"
+            data-domain="forms" 
+            data-full-page="false" 
+            data-min-height="500px" 
+            data-form-id="37569"
+        >
+        </div>
     );
 };
 
