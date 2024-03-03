@@ -30,7 +30,7 @@ const ProjectCard = ({ imgUrl, title, price, features }) => {
           <h5 className="text-xl font-semibold mb-2">{title}</h5>
           <div className="flex justify-between">
             <p className="text-gray-900 text-2xl font-bold">₹ {price}</p>
-            <button onClick={handleOrderNow} className="px-4 py-2 rounded-md bg-orange-500 text-white cursor-pointer shadow-md shadow-orange-300">Order Now</button>
+            <p className="px-4 py-2 rounded-md bg-orange-500 text-white cursor-pointer shadow-md shadow-orange-300">Order Now</p>
           </div>
           {features.map((element, index) => (
             <span key={index} className="mt-3 py-1 px-2 inline-flex items-center gap-x-1 me-2 text-xs font-medium rounded-full bg-orange-500/10 text-orange-500">
