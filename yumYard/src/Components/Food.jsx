@@ -14,7 +14,7 @@ const Food = () => {
   ]
 
   return (
-    <section className="text-gray-600 body-font">
+    <section className="text-gray-600 body-font pt-40">
       <div className="container px-5 py-24 mx-auto flex items-center">
         <div className="flex items-center justify-between w-full overflow-x-auto">
           <button
@@ -27,7 +27,7 @@ const Food = () => {
           </button>
           <div
             id="food-container"
-            className="flex space-x-4 flex-no-wrap overflow-x-auto"
+            className="flex space-x-4 flex-no-wrap overflow-x-auto "
           >
             {foods.map((_, index) => (
               <div
@@ -38,11 +38,10 @@ const Food = () => {
                 <div className="h-64 bg-gray-200">
                   <img src={_} alt="" className="h-64 w-auto"/>
                 </div>
+                <div className="h-64 bg-gray-200 rounded-lg">Item {index + 1}</div>
               </div>
             ))}
           </div>
-
-          {/* Right arrow button */}
           <button
             className="bg-gray-200 rounded-full p-2"
             onClick={() => {
