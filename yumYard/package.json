@@ -7,6 +7,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
+    "clsx": "^2.1.0",
     "flowbite-react": "^0.7.2",
     "framer-motion": "^11.0.8",
     "mdb-react-ui-kit": "^7.2.0",
@@ -15,8 +16,11 @@
     "react-countup": "^6.5.0",
     "react-dom": "^18.2.0",
     "react-id-swiper": "^4.0.0",
+    "react-router-dom": "^6.22.2",
     "react-scripts": "5.0.1",
     "swiper": "^11.0.7",
+    "tailwind-merge": "^2.2.1",
+    "tw-elements": "^1.1.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

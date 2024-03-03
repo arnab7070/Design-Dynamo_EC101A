@@ -10,7 +10,7 @@ import FoodSection from '../Components/FoodSection'
 import Testimonials from '../Components/Testimonials'
 export const Home = () => {
     return (
-        <div className='home'>
+        <div >
             <div className="main">
                 <Navbar/>
                 <HeroSection/>
