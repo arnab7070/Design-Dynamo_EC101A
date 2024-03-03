@@ -12,8 +12,10 @@ export const Home = () => {
             <div className="main">
                 <Navbar/>
                 <HeroSection/>
-                <Services />
+                <Food/>
+                <PricingCard/>
                 <ContactForm />
+                <Services />
                 <FooterComponent/>
             </div>
         </div>
