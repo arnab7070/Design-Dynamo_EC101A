@@ -35,7 +35,7 @@ const projectsData = [
   },
   {
     id: 1,
-    title: "Rapid Reader",
+    title: "Matar Paneer",
     price: "220",
     image: pic2,
     tag: ["All", "Veg"],
@@ -43,7 +43,7 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Syntax Valley Blog Website",
+    title: "Peas Kachodi",
     price: "150",
     image: pic3,
     tag: ["All", "Veg"],
@@ -51,7 +51,7 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "Idle",
+    title: "Idli",
     price: "140",
     image: pic4,
     tag: ["All", "Veg"],
@@ -59,7 +59,7 @@ const projectsData = [
   },
   {
     id: 4,
-    title: "Idle",
+    title: "Dhokla",
     price: "120",
     image: pic5,
     tag: ["All", "Veg"],
@@ -67,7 +67,7 @@ const projectsData = [
   },
   {
     id: 5,
-    title: "Fafra",
+    title: "Fafda",
     price: "100",
     image: pic6,
     tag: ["All", "Veg"],
