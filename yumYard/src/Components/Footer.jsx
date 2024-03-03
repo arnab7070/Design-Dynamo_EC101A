@@ -5,7 +5,7 @@ const Footer = () => {
     <div>
       <div class=" flex items-center justify-around">
         {" "}
-        <div class="items-start relative w-full flex flex-row justify-between mt-8">
+        <div class="items-start relative w-full flex flex-row justify-between">
           {" "}
           <div class="relative">
             {" "}
