@@ -15,7 +15,7 @@ const Testimonials = () => {
               2,157 people have said how good Rareblocks
             </p>
             <h2 className="mt-4 text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj">
-              Our happy clients say about us
+              What our happy clients say about us
             </h2>
           </div>
 
