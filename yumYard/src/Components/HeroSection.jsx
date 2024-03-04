@@ -13,8 +13,8 @@ export const HeroSection = () => {
         <div class="container m-auto px-6 pt-23 md:px-12 lg:pt-[1.5rem] lg:px-9 lg:pl-20">
           <div class="flex items-center flex-wrap px-2 md:px-0">
             <div class="relative lg:w-6/12 lg:py-24 xl:py-32">
-              <h1 class="font-bold text-4xl text-yellow-900 md:text-5xl lg:w-10/12">
-                Your favorite dishes, right at your door
+              <h1 class="font-bold text-4xl text-yellow-900 md:text-5xl">
+              Savor Every Bite: Delightful Dishes Delivered to Your Doorstep
               </h1>
               <form action="" class="w-full mt-12">
                 <div class="relative flex p-1 gap-x-4 rounded-full bg-white border border-yellow-200 shadow-md md:p-2">
