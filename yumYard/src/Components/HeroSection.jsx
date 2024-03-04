@@ -8,6 +8,8 @@ import Customer5 from "../Images/customers/customer-5.jpg";
 import arrow from "../Images/svg/arrow-down-short.svg";
 import Lottie from "lottie-react";
 import burger from "../assets/burger.json";
+import { FloatingLabel } from 'flowbite-react';
+
 export const HeroSection = () => {
   return (
     <div class="relative w-full">
@@ -22,27 +24,24 @@ export const HeroSection = () => {
                 <div class="relative gap-x-3 flex p-1 rounded-full bg-white border border-yellow-200 shadow-md md:p-2">
                   <div className="border border-gray-500 pr-3 rounded-full ">
                     <Dropdown
-                      className="bg-transparent backdrop-blur-md"
+                      className="bg-transparent backdrop-blur-md mt-6"
                       label="Category"
                       dismissOnClick={true}
                       renderTrigger={() => (
                         <span>
                           <div className="inline-flex cursor-pointer rounded-full p-3 md:p-4">
-                            Category <img src={arrow} alt="arrow" />
+                            Category 
+                      <img src={arrow} alt="arrow" className="ml-2 mt-1" />
                           </div>
                         </span>
                       )}
                     >
-                      <Dropdown.Item>FastFood</Dropdown.Item>
-                      <Dropdown.Item>Restaurant</Dropdown.Item>
-                      <Dropdown.Item>Take Out</Dropdown.Item>
+                      <Dropdown.Item className="font-semibold">FastFood</Dropdown.Item>
+                      <Dropdown.Item className="font-semibold">Restaurant</Dropdown.Item>
+                      <Dropdown.Item className="font-semibold">Take Out</Dropdown.Item>
                     </Dropdown>
                   </div>
-                  <input
-                    placeholder="Your favorite food"
-                    class="w-full p-4 rounded-full"
-                    type="text"
-                  />
+                  <div className="w-full pt-2"><FloatingLabel className="rounded-full" variant="outlined" label="Your favorite food" /></div>
                   <button
                     type="button"
                     title="Start buying"
