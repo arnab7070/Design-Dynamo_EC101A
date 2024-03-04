@@ -1,8 +1,10 @@
 import React from 'react'
-
+import LearningGrid from './LearningGrid'
 const AboutUs = () => {
   return (
-    <div>AboutUs</div>
+    <div>
+        <LearningGrid />
+    </div>
   )
 }
 
