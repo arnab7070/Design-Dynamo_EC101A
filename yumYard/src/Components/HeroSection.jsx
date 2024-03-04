@@ -21,8 +21,7 @@ export const HeroSection = () => {
               <form action="" class="w-full mt-12">
                 <div class="relative gap-x-3 flex p-1 rounded-full bg-white border border-yellow-200 shadow-md md:p-2">
                   <div className="border pr-3 rounded-full ">
-
-                  <Dropdown className="bg-transparent backdrop-blur-md" label="Category" dismissOnClick={false} renderTrigger={() => <span><div className="inline-flex cursor-pointer rounded-full p-3 md:p-4">
+                  <Dropdown className="bg-transparent backdrop-blur-md" label="Category" dismissOnClick={true} renderTrigger={() => <span><div className="inline-flex cursor-pointer rounded-full p-3 md:p-4">
                     Category <img src={arrow} alt="arrow" />
                   </div>
                   </span>}>
