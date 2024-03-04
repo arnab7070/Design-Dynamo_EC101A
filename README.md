@@ -1,11 +1,11 @@
 # Interhacktive 2023
 <div align="center">
-  <img src="https://india-aura.vercel.app/static/media/Indiaaura-logo.b542c4a66b151cb0830c.png" alt="Logo" width="120" height="120"/>
-  <h2>India Aura(Tourism Website)</h2>
+  <!-- <img src="https://india-aura.vercel.app/static/media/Indiaaura-logo.b542c4a66b151cb0830c.png" alt="Logo" width="120" height="120"/> -->
+  <h2>YumYard</h2>
   <h2>Track:- Project Workflow</h2>
   <h3>Our Dashing website is now live</h3>
-  <p>Click the following link to visit India Aura:</p>
-    <a href="https://india-aura.vercel.app/">Visit Website</a>
+  <!-- <p>Click the following link to visit India Aura:</p>
+    <a href="https://india-aura.vercel.app/">Visit Website</a> -->
   <p align="center">
     Use this readme for getting stared with this project
   </p>
@@ -17,9 +17,9 @@
 <details>
 <summary>Table of Contents</summary>
   <ul>
-    <li>
+    <!-- <li>
       <a href="#demo">Demo</a>
-    </li>
+    </li> -->
      <li><a href="#Screenshots">Screenshots</a></li>
      <li> <a href="#ProjectIdea">Project Idea</a></li>
           <li> <a href="#Problemsolvedbythisproject">Problem solved by this projects</a></li>
@@ -31,20 +31,20 @@
   </ul>
 </details>
 
-## 🎞️Demo
+<!-- ## 🎞️Demo
 
 [<video src="https://www.youtube.com/watch?v=P2Ix2aOvCOM">
 </video>](https://github.com/BIBHAB22/Inter-hacktive/assets/113331341/cb377366-ba93-4bea-98cf-b244fb1aa15b
-)
+) -->
 
 ## 🚀Screenshots
 
-🚀 Travel Web Application
+🚀 Food Delivery Web Application
 
 🚀 **Home Screen**
 
 <div align="center">
-  <img src="client\src\components\image\readme images\homepage.png" alt="pic" align="center" style="width: 100%;" />
+  <img src="readme images\home.jpeg" alt="pic" align="center" style="width: 100%;" />
 </div>
 
 🚀 **Dream Tour Destination**
