@@ -11,7 +11,7 @@ import burger from "../assets/burger.json"
 export const HeroSection = () => {
   return (
     <div class="relative w-full">
-      <div class="relative bg-yellow-50">
+      <div class="relative bg-gradient-to-r from-amber-200 to-yellow-200">
         <div class="container m-auto px-6 pt-23 md:px-12 lg:pt-[1.5rem] lg:px-9 lg:pl-20">
           <div class="flex items-center flex-wrap px-2 md:px-0">
             <div class="relative lg:w-6/12 lg:py-24 xl:py-32">
@@ -165,10 +165,13 @@ export const HeroSection = () => {
 
             <div class="ml-auto -mb-24 lg:-mb-56 lg:w-6/12">
               <Lottie animationData={burger} />
+            <div class="ml-auto mb-56 lg:-mb-56 lg:w-6/12">
+                <Lottie animationData={burger} />
             </div>
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
