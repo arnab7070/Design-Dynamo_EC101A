@@ -1,4 +1,4 @@
-# Interhacktive 2023
+# Design-Dynamo_EC101A
 <div align="center">
   <!-- <img src="https://india-aura.vercel.app/static/media/Indiaaura-logo.b542c4a66b151cb0830c.png" alt="Logo" width="120" height="120"/> -->
   <h2>YumYard</h2>
@@ -47,30 +47,30 @@
   <img src="readme images\home.jpeg" alt="pic" align="center" style="width: 100%;" />
 </div>
 
-🚀 **Dream Tour Destination**
+🚀 **What's in your mind**
 
 <div align="center">
-  <img src="client\src\components\image\readme images\dreamtour.png" alt="pic" align="center" style="width: 100%;" />
+  <img src="readme images\menu.jpeg" alt="pic" align="center" style="width: 100%;" />
 </div>
 
-🚀  **Vacation_page**
+🚀  **Services**
 
 <div align="center">
-  <img src="client\src\components\image\readme images\vaccation.png" alt="pic" align="center" style="width: 100%;" />
+  <img src="readme images\services.jpeg" alt="pic" align="center" style="width: 100%;" />
 </div>
 
-🚀 **Beach_page**
+🚀 **Prices**
 
 <div align="center">
-  <img src="client\src\components\image\readme images\beach.png" alt="pic" align="center" style="width: 100%;" />
+  <img src="readme images\price.jpeg" alt="pic" align="center" style="width: 100%;" />
 </div>
 
-🚀 **Blog**
+🚀 **Testimonials**
 <div align="center">
-  <img src="client\src\components\image\readme images\blog.png" alt="pic" align="center" style="width: 100%;" />
+  <img src="readme images\testimonials.jpeg" alt="pic" align="center" style="width: 100%;" />
 </div>
 
-🚀 **Chat bot**
+<!-- 🚀 **Chat bot**
 <div align="center">
   <img src="client\src\components\image\readme images\chatbot.png" alt="pic" align="center" style="width: 100%;" />
 </div>
@@ -85,7 +85,7 @@
 
 <div align="center">
   <img src="client\src\components\image\readme images\login.png" alt="pic" align="center" style="width: 100%;" />
-</div>
+</div> -->
 
 
 
@@ -93,16 +93,23 @@
 ## 🚀Project Idea
 
 
-**We Developed a Tavel website using Node Js,Express JS, Mongo DB Backend And in Frontend we used React Js. We also used postman API to test our .Our website was meticulously developed by a dedicated team of designers and programmers. From concept to code, we fused creativity and technology to bring you an intuitive and visually captivating platform. Seamlessly integrating design and functionality, we've created an engaging digital experience tailored to your needs. How did it work? Travel website has a full Stack Project.Our platform operates through a user-friendly interface, offering intuitive navigation and interactive elements. Users can effortlessly explore informative sections, access comprehensive tour plans, and seamlessly connect with the world with our user. Behind the scenes, robust backend systems ensure data security, while real-time updates and responsive design guarantee a smooth experience across devices. Experience the synergy of cutting-edge technology and user-centric design.**
+**We Developed a Food delivery website using React Js. Our website was meticulously developed by a dedicated team of designers and programmers. From concept to code, we fused creativity and technology to bring you an intuitive and visually captivating platform. Seamlessly integrating design and functionality, we've created an engaging digital experience tailored to your needs. How did it work? Food delivery website has a full Stack Project.Our platform operates through a user-friendly interface, offering intuitive navigation and interactive elements. Users can effortlessly explore informative sections, access comprehensive tour plans, and seamlessly connect with the world with our user. Behind the scenes, responsive design guarantee a smooth experience across devices. Experience the synergy of cutting-edge technology and user-centric design.**
 
 
 
 ## 👨‍💻Problem solved by this project
-India is a beautiful country. The diversity in this country is incredible. Even then, many smaller countries attract more foreign tourists than India. But why? Why can't we bring people to show them our amazing country? The answer could be simple, BRANDING.
-India is the most beautiful country in the world ,the Himalayan mountains beaches of Kerala the desert of Rajasthan. what doesn't India have??  just one thing tourist.
-Dubai is a City but 16.9 million tourists come to Dubai every year but in India as a country have  only 10 million that's it. 
-and this impacts our hotels and our businesses and our economy. The country is ours and if we want to become a superpower we need to grow our economy.
-That’s why I present you this amazing project named India Aura.
+In today's fast-paced world, people often face challenges related to food discovery and ordering:
+
+- Limited Time and Information Overload: Busy schedules and an abundance of restaurant options can make it difficult to find the perfect - meal efficiently.
+- Lack of Transparency: Inconsistent information, outdated menus, and unreliable reviews can lead to frustrating dining experiences.
+- Inconvenient Ordering: Traditional methods like calling restaurants or physically visiting them can be time-consuming and inflexible.
+
+YumYard addresses these issues by providing:
+
+- Convenience and Efficiency: Users can effortlessly search, compare, and discover restaurants within minutes, saving valuable time and effort.
+- Information Transparency: Up-to-date menus, high-quality photos, and reliable user reviews enable informed decision-making.
+- Seamless Ordering: A streamlined online ordering platform simplifies the process, allowing users to order food directly from their devices and enjoy delivery (if available).
+
 
 
 ## 🛠️Tech Stack
@@ -112,32 +119,34 @@ That’s why I present you this amazing project named India Aura.
 - <img src="https://mui.com/static/logo.png" height=30px width=50px/>**Material UI**- For UI ICON <br>
 - <img src = "https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png" height=40px width=40px> **Node js**- for Backend Service <br>
 
-- <img src = "https://img.icons8.com/?size=512&id=74402&format=png" height=40px width=40px> **Mongo DB**- for Database Service <br>
+<!-- - <img src = "https://img.icons8.com/?size=512&id=74402&format=png" height=40px width=40px> **Mongo DB**- for Database Service <br> -->
 
 - <img src="https://logowik.com/content/uploads/images/npm-inc7007.logowik.com.webp" height=40px width=40px/> **NPM** - Node Package manager<br>
-- <img src="https://s3.amazonaws.com/awsmp-logos/cloudinary.png"  width=40px/> **Cloudinary** - Cloud Services <br>
+<!-- - <img src="https://s3.amazonaws.com/awsmp-logos/cloudinary.png"  width=40px/> **Cloudinary** - Cloud Services <br>
 
 - <img src = "https://seeklogo.com/images/R/render-logo-818C47ACCA-seeklogo.com.png"  width=40px> **Render** or Project Deployment<br>
 
-- <img src = "https://avatars.githubusercontent.com/u/14985020?s=48&v=4" height=40px width=40px> **Vercel**- For Project Deployment<br>
+- <img src = "https://avatars.githubusercontent.com/u/14985020?s=48&v=4" height=40px width=40px> **Vercel**- For Project Deployment<br> -->
 - <img src = "https://w7.pngwing.com/pngs/72/731/png-transparent-dialogflow-chatbot-conversation-google-natural-language-processing-google-angle-rectangle-orange.png" width=40px> **Dialogflow**- For ChatBot<br>
 
 
 
 ## 🙌 Functionalities
 
-- In the landing page user can see the stats and interect with some features
-- User can navigate to other pages like- **Home**,**Dream Tour**,**Profile**,**Blog**,**About Us**,**Register**,**Login**
-- After **Register** button user will redirect to login page and user have to login to use all features
-- After creating account and login users navigate to profile section here user can able to write blog and book **Hotels, flights and tourpackages**
-- Then user can requested to go Home page then go to Dream Tour page.
-- In dream tour page User need to scroll down and user find 4 section **Incredible India**,**Cultural**,**Wildlife** and **Vacation**
-- In **Incredible India** page user can find 30 days and 50 days Whole India tour plan.
-- In **Cultural** page user can find all cultural tourism of India like **Char Dham Yatra**,**Amarnath**,**Shri Jagannath Temple Puri**,**Taj Mahal** etc with proper tour plan.
-- In **Wildlife** page user can find all wildlife tourism of India like **Sundarbans**,**Jim Corbett National Park**,**Kaziranga National Park**,**Jaldapara National Park** etc with proper tour plan.
-- In **Vacation** page user can find all vacation tourism of India like **Beaches**,**Mountains**,**Historical Places**,**Outdoor-Attractions** etc with proper tour plan.
-- In all **Vacation** pages user can find all beaches mountains etc with proper tour plan.
-- Now come to **Blog** page Here user get a indian cultural map if user over the map user found Blogs about that region of India user is requested to click on any region to read Blog about that region.
+- Restaurant Search:
+  - Comprehensive listing of restaurants, categorized by cuisine type, location, price range, and other relevant filters.
+  - Advanced search functionality based on user preferences (dietary restrictions, delivery availability, etc.).
+- Detailed Restaurant Information:
+  - Up-to-date menus with accurate descriptions and pricing.
+  - High-quality photos of food items and restaurant interiors.
+  - User-generated reviews and ratings to help others make informed decisions.
+- Ordering System:
+  - Seamless integration with delivery partners for online ordering capabilities.
+  - Secure payment options (credit cards, debit cards, digital wallets).
+  - Real-time order tracking and status updates.
+- Personalized User Experience:
+  - Account creation and user profile management.
+  - Personalized recommendations based on past searches and order history.
 - In Whole App user found a **Chat Bot** named **Tourism Helper** if user give any city or region name of India the Chat Bot gives all tourist places and special things about that city or region.
 - Now after giving a feedback user can log out.
 ## ⏭Roadmap
