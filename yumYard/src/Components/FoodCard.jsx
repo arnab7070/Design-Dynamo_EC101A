@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-
+import Chilli from "../assets/chilli.json"
+import Lottie from "lottie-react";
 const ProjectCard = ({ imgUrl, title, price, features }) => {
   const [showModal, setShowModal] = useState(false);
   const [quantity, setQuantity] = useState(1);
@@ -97,26 +98,15 @@ const ProjectCard = ({ imgUrl, title, price, features }) => {
               &#8203;
             </span>
             {/* Actual modal */}
-            <div
-              className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full"
-              role="dialog"
-              aria-labelledby="modal-title"
-              aria-describedby="modal-description"
-            >
-              <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-                <div className="sm:flex sm:items-start">
-                  <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
-                    <h3
-                      className="text-lg leading-6 font-medium text-gray-900"
-                      id="modal-title"
-                    >
+            <div class="inline-block align-bottom rounded-lg text-left overflow-hidden shadow-2xl transform transition-all ease-in-out duration-500 sm:my-8 sm:align-middle sm:max-w-3xl sm:w-full bg-gradient-to-br from-pink-500 to-purple-600">
+              <div class="bg-gradient-to-r from-teal-400 to-yellow-200  px-8  sm:px-12 sm:py-8">
+                <div class="sm:flex sm:items-center">
+                  <div class="text-center sm:text-left">
+                    <h3 class="text-3xl font-extrabold text-black mb-4">
                       Order Details
                     </h3>
-                    <div className="mt-2">
-                      <p
-                        className="text-sm text-gray-500"
-                        id="modal-description"
-                      >
+                    <div class="mb-6">
+                      <p class="text-lg font-bold text-black mb-2">
                         Adjust the quantity of items you want to order.
                       </p>
                       <input
@@ -125,20 +115,28 @@ const ProjectCard = ({ imgUrl, title, price, features }) => {
                         max={10}
                         value={quantity}
                         onChange={handleChangeQuantity}
-                        className="mt-3 p-2 border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm rounded-md"
+                        class="w-32 p-4 font-bold bg-white border-2 border-gray-300 focus:outline-none focus:ring-2 rounded-md text-center text-gray-800 text-lg"
                       />
-                      <p className="text-sm text-gray-500 mt-2">
+                      <p class="text-xl font-bold text-black mt-4">
                         Total Amount: ₹ {price * quantity}
                       </p>
                     </div>
                   </div>
+                  <Lottie animationData={Chilli}/>
                 </div>
               </div>
-              <div className="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+              <div class="bg-gray-600 px-8 py-6 sm:px-12 sm:py-4 flex justify-between">
+              <button
+              
+                  type="button"
+                  class="inline-flex items-center justify-center px-6 py-3 bg-green-700 text-white hover:bg-green-400 hover:text-gray-900 font-bold rounded-md shadow-md transition duration-300 ease-in-out"
+                >
+                Submit
+                </button>
                 <button
                   onClick={closeModal}
                   type="button"
-                  className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:ml-3 sm:w-auto sm:text-sm"
+                  class="inline-flex items-center justify-center px-6 py-3 bg-red-700 text-white hover:bg-red-400 hover:text-gray-900 font-bold rounded-md shadow-md transition duration-300 ease-in-out"
                 >
                   Close
                 </button>
