@@ -68,7 +68,7 @@ export const HeroSection = () => {
                 </a>{" "}
                 tantalizing menu crafted to perfection.
               </p>
-              <div class=" bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-10   mt-8 px-4 py-3 flex flex-col sm:flex-row gap-x-8 items-center rounded-btn   glassEffect  ">
+              <div class=" bg-clip-padding  items-center backdrop-filter backdrop-blur-3xl bg-opacity-10   mt-8 px-4 py-3 flex flex-col sm:flex-row gap-x-8  rounded-btn   glassEffect  ">
                 <div class="flex flex-row items-center justify-center">
                   <a
                     target="_blank"
@@ -151,8 +151,8 @@ export const HeroSection = () => {
                     />
                   </a>
                 </div>
-                <p class="delivered-text flex gap-x-3">
-                <CountUp start={0} end={250000} duration={3} suffix="+" />
+                <p class="delivered-text  md:flex md:gap-x-3">
+                <CountUp start={0} end={250000} duration={3} suffix="+"  className="flex justify-center md:flex md:justify-start my-auto"/>
                 <div>meals delivered last year!</div>
               </p>
               </div>
