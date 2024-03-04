@@ -98,9 +98,7 @@ const Testimonials = () => {
 
                     <blockquote class="flex-1 mt-8">
                       <p class="text-lg leading-relaxed text-gray-900 font-pj">
-                        “You made it so simple. My new site is so much faster
-                        and easier to work with than my old site. I just choose
-                        the page, make the change.”
+                        “"This website is a lifesaver! I used to spend hours browsing menus and reviews, but now I can find exactly what I'm craving in minutes.”
                       </p>
                     </blockquote>
                   </div>
@@ -113,10 +111,10 @@ const Testimonials = () => {
                     />
                     <div class="ml-4">
                       <p class="text-base font-bold text-gray-900 font-pj">
-                        Leslie Alexander
+                      Sarah K.
                       </p>
                       <p class="mt-0.5 text-sm font-pj text-gray-600">
-                        Freelance React Developer
+                      Food Enthusiast
                       </p>
                     </div>
                   </div>
@@ -171,8 +169,7 @@ const Testimonials = () => {
 
                     <blockquote class="flex-1 mt-8">
                       <p class="text-lg leading-relaxed text-gray-900 font-pj">
-                        “Simply the best. Better than all the rest. I’d
-                        recommend this product to beginners and advanced users.”
+                        “I love the detailed restaurant information and user reviews. It helps me choose the perfect place for every occasion, whether it's a casual lunch or a special date night.”
                       </p>
                     </blockquote>
                   </div>
@@ -188,7 +185,7 @@ const Testimonials = () => {
                         Jacob Jones
                       </p>
                       <p class="mt-0.5 text-sm font-pj text-gray-600">
-                        Digital Marketer
+                      Restaurant Regular
                       </p>
                     </div>
                   </div>
@@ -243,9 +240,7 @@ const Testimonials = () => {
 
                     <blockquote class="flex-1 mt-8">
                       <p class="text-lg leading-relaxed text-gray-900 font-pj">
-                        “I cannot believe that I have got a brand new landing
-                        page after getting Omega. It was super easy to edit and
-                        publish.”
+                        “This website has opened my eyes to so many new cuisines and restaurants I wouldn't have found otherwise. It's like having a personal food guide in my pocket!”
                       </p>
                     </blockquote>
                   </div>
@@ -261,7 +256,9 @@ const Testimonials = () => {
                         Jenny Wilson
                       </p>
                       <p class="mt-0.5 text-sm font-pj text-gray-600">
-                        Graphic Designer
+                      Adventurous Eater
+
+
                       </p>
                     </div>
                   </div>
