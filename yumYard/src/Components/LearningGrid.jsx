@@ -49,9 +49,9 @@ const LearningGridArray = [
 const LearningGrid = () => {
   useEffect(() => {
     Aos.init({
-      offset: 100,
-      duration: 400,
-      easing: "ease-in-back",
+      offset: 50,
+      duration: 200,
+      easing: "ease-in",
     });
   }, []);
 
@@ -61,7 +61,7 @@ const LearningGrid = () => {
         return (
           <div
             key={index}
-            data-aos='fade-down'
+            data-aos={`${index%2 === 1 ? "fade-up" : "fade-down"}`}
             className={`${index === 0 && "lg:col-span-2 lg:h-[280px] p-5"}
                 ${
                   card.order % 2 === 1
