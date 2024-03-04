@@ -8,8 +8,8 @@ import Customer5 from "../Images/customers/customer-5.jpg";
 import arrow from "../Images/svg/arrow-down-short.svg";
 import Lottie from "lottie-react";
 import burger from "../assets/burger.json";
-import { FloatingLabel } from 'flowbite-react';
-import CountUp from 'react-countup';
+import { FloatingLabel } from "flowbite-react";
+import CountUp from "react-countup";
 export const HeroSection = () => {
   return (
     <div class="relative w-full">
@@ -22,26 +22,44 @@ export const HeroSection = () => {
               </h1>
               <form action="" class="w-full mt-12">
                 <div class="relative gap-x-3 flex p-1 rounded-full bg-white border border-yellow-200 shadow-md md:p-2">
-                  <div className="border border-gray-500 pr-3 rounded-full ">
+                  <div className=" hidden md:block border border-gray-500 pr-3 rounded-[26px] ">
                     <Dropdown
                       className="bg-transparent backdrop-blur-sm mt-6 flex justify-center items-center"
                       label="Category"
                       dismissOnClick={true}
                       renderTrigger={() => (
                         <span>
-                          <div className="inline-flex cursor-pointer rounded-full p-3 md:p-4">
+                          <div
+                            className="inline-flex cursor-pointer rounded-full p-4 mt-1"
+                          >
                             Category
-                            <img src={arrow} alt="arrow" className="ml-2 mt-1" />
+                            <img
+                              src={arrow}
+                              alt="arrow"
+                              className="ml-2 mt-1"
+                            />
                           </div>
                         </span>
                       )}
                     >
-                      <Dropdown.Item className="font-semibold">FastFood</Dropdown.Item>
-                      <Dropdown.Item className="font-semibold">Restaurant</Dropdown.Item>
-                      <Dropdown.Item className="font-semibold">Take Out</Dropdown.Item>
+                      <Dropdown.Item className="font-semibold">
+                        FastFood
+                      </Dropdown.Item>
+                      <Dropdown.Item className="font-semibold">
+                        Restaurant
+                      </Dropdown.Item>
+                      <Dropdown.Item className="font-semibold">
+                        Take Out
+                      </Dropdown.Item>
                     </Dropdown>
                   </div>
-                  <div className="w-full pt-2"><FloatingLabel className="rounded-full" variant="filled" label="Your favorite food" /></div>
+                  <div className="w-full pt-2">
+                    <FloatingLabel
+                      className="rounded-full"
+                      variant="filled"
+                      label="Your favorite food"
+                    />
+                  </div>
                   <button
                     type="button"
                     title="Start buying"
@@ -152,16 +170,20 @@ export const HeroSection = () => {
                   </a>
                 </div>
                 <p class="delivered-text  md:flex md:gap-x-3">
-                <CountUp start={0} end={250000} duration={3} suffix="+"  className="flex justify-center md:flex md:justify-start my-auto"/>
-                <div>meals delivered last year!</div>
-              </p>
+                  <CountUp
+                    start={0}
+                    end={250000}
+                    duration={3}
+                    suffix="+"
+                    className="flex justify-center md:flex md:justify-start my-auto"
+                  />
+                  <div>meals delivered last year!</div>
+                </p>
               </div>
             </div>
 
-
             {/* Adjust width and height as needed */}
             <Lottie animationData={burger} />
-
           </div>
         </div>
       </div>
