@@ -8,7 +8,7 @@ const Header = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
 
   return (
-    <nav className="app__navbar overflow-x-hidden">
+    <nav className="app__navbar bg-gradient-to-r from-amber-200 to-yellow-200 overflow-x-hidden">
       <div className="app__navbar-logo">
         <img src={images.gericht} alt="app__logo" />
       </div>
