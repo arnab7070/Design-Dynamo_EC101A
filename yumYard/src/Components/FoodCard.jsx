@@ -122,7 +122,7 @@ const ProjectCard = ({ imgUrl, title, price, features }) => {
                       </p>
                     </div>
                   </div>
-                  <Lottie animationData={Chilli} />
+                  <Lottie animationData={Chilli} style={{ width: 200, height: 200 }} />
                 </div>
               </div>
               <div class="bg-transparent backdrop-blur-md px-8 py-6 sm:px-12 sm:py-4 flex justify-between">
