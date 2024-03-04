@@ -120,7 +120,7 @@ const Header = () => {
         {toggleMenu && (
           <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
             <MdOutlineRestaurantMenu
-              fontSize={27}
+              size={60}
               className="overlay__close"
               onClick={() => setToggleMenu(false)}
             />
