@@ -13,12 +13,12 @@ const ContactForm = () => {
     }, []);
 
     return (
-        <div id='contact' className="visme_d" 
-            data-title="Contact Form" 
+        <div className="visme_d"
+            data-title="Contact Form"
             data-url="dm0xvwq1-contact-form"
-            data-domain="forms" 
-            data-full-page="false" 
-            data-min-height="500px" 
+            data-domain="forms"
+            data-full-page="false"
+            data-min-height="500px"
             data-form-id="37569"
         >
         </div>
