@@ -4,8 +4,10 @@ import Customer2 from "../Images/customers/customer-2.jpg"
 import Customer3 from "../Images/customers/customer-3.jpg"
 import Customer4 from "../Images/customers/customer-4.jpg"
 import Customer5 from "../Images/customers/customer-5.jpg"
+import Lottie from "lottie-react";
+import burger from "../assets/burger.json"
 export const HeroSection = () => {
-  return (
+  return ( 
     <div class="relative w-full">
       <div class="relative bg-yellow-50">
         <div class="container m-auto px-6 pt-23 md:px-12 lg:pt-[1.5rem] lg:px-9 lg:pl-20">
@@ -15,7 +17,7 @@ export const HeroSection = () => {
                 Your favorite dishes, right at your door
               </h1>
               <form action="" class="w-full mt-12">
-                <div class="relative flex p-1 rounded-full bg-white border border-yellow-200 shadow-md md:p-2">
+                <div class="relative flex p-1 gap-x-4 rounded-full bg-white border border-yellow-200 shadow-md md:p-2">
                   <select
                     class="hidden p-3 rounded-full bg-transparent md:block md:p-4"
                     name="domain"
@@ -159,14 +161,7 @@ export const HeroSection = () => {
             </div>
 
             <div class="ml-auto -mb-24 lg:-mb-56 lg:w-6/12">
-              <img
-                src="https://tailus.io/sources/blocks/food-delivery/preview/images/food.webp"
-                class="relative"
-                alt="food illustration"
-                loading="lazy"
-                width="4500"
-                height="4500"
-              />
+                <Lottie animationData={burger} />
             </div>
           </div>
         </div>
