@@ -103,7 +103,7 @@ const ProjectCard = ({ imgUrl, title, price, features }) => {
               &#8203;
             </span>
             {/* Actual modal */}
-            <div class="inline-block align-bottom rounded-lg text-left overflow-hidden shadow-2xl transform transition-all ease-in-out duration-500 sm:my-8 sm:align-middle sm:max-w-3xl sm:w-full backdrop-blur-md border-2">
+            <div class="inline-block bg-[#faedda] bg-opacity-50 align-bottom rounded-lg text-left overflow-hidden shadow-2xl transform transition-all ease-in-out duration-500 sm:my-8 sm:align-middle sm:max-w-3xl sm:w-full backdrop-blur-md border-2">
               <div class=" px-8  sm:px-12 sm:py-8">
                 <div class="sm:flex sm:items-center">
                   <div class="text-center sm:text-left">
