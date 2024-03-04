@@ -207,7 +207,7 @@ const FoodSection = () => {
 
   return (
     <section id="projects">
-      <h2 className="text-center text-5xl font-bold text-orange-500 mt-4 mb-8 md:mb-12 pt-60">
+      <h2 className="text-center text-5xl font-bold text-orange-500 mt-4 mb-8 md:mb-12 pt-10">
         Our Menu
       </h2>
       <div className="text-black flex flex-row justify-center items-center gap-2 py-6">
