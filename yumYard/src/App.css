@@ -48,7 +48,15 @@
   justify-content: flex-start;
   margin-right: 2rem;
 }
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
 
+.delivered-text span {
+  color: #cf711f;
+  font-weight: 700;
+}
 .app__wrapper_img img {
   width: 80%;
 }
