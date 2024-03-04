@@ -13,7 +13,7 @@ const ContactForm = () => {
     }, []);
 
     return (
-        <div className="visme_d" 
+        <div id='contact' className="visme_d" 
             data-title="Contact Form" 
             data-url="dm0xvwq1-contact-form"
             data-domain="forms" 
