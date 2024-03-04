@@ -21,14 +21,13 @@ export const HeroSection = () => {
               <form action="" class="w-full mt-12">
                 <div class="relative gap-x-3 flex p-1 rounded-full bg-white border border-yellow-200 shadow-md md:p-2">
 
-                  <Dropdown label="Category" dismissOnClick={false} renderTrigger={() => <span><div className="border flex cursor-pointer rounded-full p-3 md:block md:p-4">
+                  <Dropdown className="bg-transparent backdrop-blur-md" label="Category" dismissOnClick={false} renderTrigger={() => <span><div className="border flex cursor-pointer rounded-full p-3 md:block md:p-4">
                     Category
                   </div>
                   </span>}>
-                    <Dropdown.Item>Dashboard</Dropdown.Item>
-                    <Dropdown.Item>Settings</Dropdown.Item>
-                    <Dropdown.Item>Earnings</Dropdown.Item>
-                    <Dropdown.Item>Sign out</Dropdown.Item>
+                    <Dropdown.Item>FastFood</Dropdown.Item>
+                    <Dropdown.Item>Restaurant</Dropdown.Item>
+                    <Dropdown.Item>Take Out</Dropdown.Item>
                   </Dropdown>
                   {/* <select
                     class="hidden rounded-full p-3 md:block md:p-4"
