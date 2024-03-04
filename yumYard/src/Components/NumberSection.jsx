@@ -33,7 +33,7 @@ const NumberSection = () => {
     }, []);
 
     return (
-        <section ref={sectionRef} className="text-gray-600 body-font mt-10 ml-10 mr-10 rounded-xl" style={{ background: 'linear-gradient(45deg, #FFB74D, #FF9800)' }}>
+        <section id='contact' ref={sectionRef} className="text-gray-600 body-font mt-10 ml-10 mr-10 rounded-xl" style={{ background: 'linear-gradient(45deg, #FFB74D, #FF9800)' }}>
             <div className="container px-5 py-24 mx-auto">
                 <div className="flex flex-wrap -m-4 text-center">
                     <div className="p-4 sm:w-1/4 w-1/2">
