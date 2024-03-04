@@ -98,8 +98,8 @@ const ProjectCard = ({ imgUrl, title, price, features }) => {
               &#8203;
             </span>
             {/* Actual modal */}
-            <div class="inline-block align-bottom rounded-lg text-left overflow-hidden shadow-2xl transform transition-all ease-in-out duration-500 sm:my-8 sm:align-middle sm:max-w-3xl sm:w-full bg-gradient-to-br from-pink-500 to-purple-600">
-              <div class="bg-gradient-to-r from-teal-400 to-yellow-200  px-8  sm:px-12 sm:py-8">
+            <div class="inline-block align-bottom rounded-lg text-left overflow-hidden shadow-2xl transform transition-all ease-in-out duration-500 sm:my-8 sm:align-middle sm:max-w-3xl sm:w-full backdrop-blur-md border-2">
+              <div class=" px-8  sm:px-12 sm:py-8">
                 <div class="sm:flex sm:items-center">
                   <div class="text-center sm:text-left">
                     <h3 class="text-3xl font-extrabold text-black mb-4">
@@ -122,16 +122,16 @@ const ProjectCard = ({ imgUrl, title, price, features }) => {
                       </p>
                     </div>
                   </div>
-                  <Lottie animationData={Chilli}/>
+                  <Lottie animationData={Chilli} />
                 </div>
               </div>
               <div class="bg-gray-600 px-8 py-6 sm:px-12 sm:py-4 flex justify-between">
-              <button
-              
+                <button
+
                   type="button"
                   class="inline-flex items-center justify-center px-6 py-3 bg-green-700 text-white hover:bg-green-400 hover:text-gray-900 font-bold rounded-md shadow-md transition duration-300 ease-in-out"
                 >
-                Submit
+                  Submit
                 </button>
                 <button
                   onClick={closeModal}

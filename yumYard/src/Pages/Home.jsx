@@ -16,6 +16,7 @@ export const Home = () => {
             <div className="main">
                 <Navbar/>
                 <HeroSection/>
+                <AboutUs/>
                 <FoodSection/>
                 <PricingCard/>
                 <Services />
@@ -23,7 +24,6 @@ export const Home = () => {
                 <ContactForm />
                 <Testimonials/>
                 <FooterComponent/>
-                <AboutUs/>
             </div>
         </div>
     )
