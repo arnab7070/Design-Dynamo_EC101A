@@ -5,42 +5,42 @@ import CTAButton from "./Button";
 const LearningGridArray = [
     {
       order: -1,
-      heading: "World-Class Education for",
-      highlightText: " Everyone, Anywhere",
+      heading: "One-stop shop for exploring the",
+      highlightText: " culinary delights of your city",
       description:
-        "Skillverse collaborates with over 275+ premier  universities and corporations to provide individuals and organizations throughout the world with flexible, affordable, job-relevant online learning.",
+        "We're passionate about connecting food lovers with the best restaurants and making it easier than ever to discover, order, and enjoy delicious meals.",
       BtnText: "Learn More",
       BtnLink: "/SignUp",
     },
     {
       order: 1,
-      heading: "Curriculum Based on Industry Needs",
+      heading: "Extensive Restaurant Directory",
       description:
-        "Save time and money! The Belajar curriculum is made to be easier to understand and in line with industry needs.",
+        "Search from a vast selection of restaurants, categorized by cuisine type, location, price range, dietary restrictions, and more.",
     },
     {
       order: 2,
-      heading: "Our Learning Methods",
+      heading: "Detailed Restaurant Information",
       description:
-        "Skillverse collaborates with over 275+ premier universities and corporations to provide individuals and organizations throughout the world with flexible, affordable, job-relevant online learning.",
+        "Get accurate menus, high-quality photos, user reviews, and ratings to make informed decisions.",
     },
     {
       order: 3,
-      heading: "Certification",
+      heading: "Seamless Ordering",
       description:
-        "Skillverse collaborates with over 275+ premier universities and corporations to provide individuals and organizations throughout the world with flexible, affordable, job-relevant online learning.",
+        "Order directly from your favorite restaurants and enjoy hassle-free delivery (if available in your location).",
     },
     {
       order: 4,
-      heading: `Rating "Auto-grading"`,
+      heading: "Personalized Experience",
       description:
-        "Skillverse collaborates with over 275+ premier universities and corporations to provide individuals and organizations throughout the world with flexible, affordable, job-relevant online learning.",
+        "Create an account to manage your preferences, track past orders, and discover personalized recommendations based on your food interests.",
     },
     {
       order: 5,
-      heading: "Ready to Work",
+      heading: "Our Commitment",
       description:
-        "Skillverse collaborates with over 275+ premier universities and corporations to provide individuals and organizations throughout the world with flexible, affordable, job-relevant online learning.",
+        "YumYard is dedicated to providing a user-friendly platform, accurate information, and a positive experience for both users and restaurants. We strive to continuously improve our service and support the ever-evolving restaurant industry.",
     },
   ];
 

@@ -1,6 +1,6 @@
 # Project ID - EC101A
 
-# Hacking Guide for yumYard 😎
+<!-- # Hacking Guide for yumYard 😎
 
 ## .yumYard 🤞
 
@@ -46,4 +46,57 @@ now you are got to go for hacking !!
 
 ## 👌 Ask your doubt on Discord
 
-[Click Here](https://discord.com/invite/8qJBt5pby5)  👈👈
+[Click Here](https://discord.com/invite/8qJBt5pby5)  👈👈 -->
+
+
+# Hi, We're Design-Dynamos! 👋
+
+
+# YumYard: Your Delicious Destination
+
+**Welcome to YumYard, your one-stop shop for exploring, ordering, and enjoying the culinary delights of your city!** This README file outlines the key aspects of Foodify's development and operation.
+
+
+## Features
+
+- Restaurant Search:
+    - Comprehensive listing of restaurants, categorized by cuisine type, location, price range, and other relevant filters.
+    - Advanced search functionality based on user preferences (dietary restrictions, delivery availability, etc.).
+- Detailed Restaurant Information:
+    - Up-to-date menus with accurate descriptions and pricing.
+    - High-quality photos of food items and restaurant interiors.
+    - User-generated reviews and ratings to help others make informed decisions.
+- Ordering System:
+    - Seamless integration with delivery partners for online ordering capabilities.
+    - Secure payment options (credit cards, debit cards, digital wallets).
+    - Real-time order tracking and status updates.
+
+- Personalized User Experience:
+    - Account creation and user profile management (optional).
+    - Personalized recommendations based on past searches and order history (optional).
+    - Wishlist or watchlist feature (optional) to save favorite restaurants and dishes.
+
+
+## Tech Stack
+
+- React
+- Tailwind CSS
+
+
+
+## Authors
+Made with hunger by:
+- [@Bineet09](https://github.com/Bineet09)
+- [@Bibhab22](https://github.com/Bibhab22)
+
+
+
+## Deployment
+
+To deploy this project run
+
+```bash
+  npm start
+```
+
+
