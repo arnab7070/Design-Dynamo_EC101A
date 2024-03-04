@@ -9,38 +9,28 @@ import arrow from "../Images/svg/arrow-down-short.svg";
 import Lottie from "lottie-react";
 import burger from "../assets/burger.json"
 export const HeroSection = () => {
-  return ( 
+  return (
     <div class="relative w-full">
       <div class="relative bg-yellow-50">
         <div class="container m-auto px-6 pt-23 md:px-12 lg:pt-[1.5rem] lg:px-9 lg:pl-20">
           <div class="flex items-center flex-wrap px-2 md:px-0">
             <div class="relative lg:w-6/12 lg:py-24 xl:py-32">
               <h1 class="font-bold text-4xl text-yellow-900 md:text-5xl">
-              Savor Every Bite: Delightful Dishes Delivered to Your Doorstep
+                Savor Every Bite: Delightful Dishes Delivered to Your Doorstep
               </h1>
               <form action="" class="w-full mt-12">
                 <div class="relative gap-x-3 flex p-1 rounded-full bg-white border border-yellow-200 shadow-md md:p-2">
+                  <div className="border pr-3 rounded-full ">
 
-                  <Dropdown className="bg-transparent backdrop-blur-md" label="Category" dismissOnClick={false} renderTrigger={() => <span><div className="border flex cursor-pointer rounded-full p-3 md:block md:p-4">
-                    Category
+                  <Dropdown className="bg-transparent backdrop-blur-md" label="Category" dismissOnClick={false} renderTrigger={() => <span><div className="inline-flex cursor-pointer rounded-full p-3 md:p-4">
+                    Category <img src={arrow} alt="arrow" />
                   </div>
                   </span>}>
                     <Dropdown.Item>FastFood</Dropdown.Item>
                     <Dropdown.Item>Restaurant</Dropdown.Item>
                     <Dropdown.Item>Take Out</Dropdown.Item>
                   </Dropdown>
-                  {/* <select
-                    class="hidden rounded-full p-3 md:block md:p-4"
-                <div class="relative flex p-1 gap-x-4 rounded-full bg-white border border-yellow-200 shadow-md md:p-2">
-                  <select
-                    class="hidden p-3 rounded-full bg-transparent md:block md:p-4"
-                    name="domain"
-                    id="domain"
-                  >
-                    <option value="design">FastFood</option>
-                    <option value="development">Restaurant</option>
-                    <option value="marketing">Marketing</option>
-                  </select> */}
+                  </div>
                   <input
                     placeholder="Your favorite food"
                     class="w-full p-4 rounded-full"
@@ -175,7 +165,7 @@ export const HeroSection = () => {
             </div>
 
             <div class="ml-auto -mb-24 lg:-mb-56 lg:w-6/12">
-                <Lottie animationData={burger} />
+              <Lottie animationData={burger} />
             </div>
           </div>
         </div>
