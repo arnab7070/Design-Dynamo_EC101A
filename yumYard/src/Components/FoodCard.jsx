@@ -125,20 +125,20 @@ const ProjectCard = ({ imgUrl, title, price, features }) => {
                   <Lottie animationData={Chilli} />
                 </div>
               </div>
-              <div class="bg-gray-600 px-8 py-6 sm:px-12 sm:py-4 flex justify-between">
-                <button
-
-                  type="button"
-                  class="inline-flex items-center justify-center px-6 py-3 bg-green-700 text-white hover:bg-green-400 hover:text-gray-900 font-bold rounded-md shadow-md transition duration-300 ease-in-out"
-                >
-                  Submit
-                </button>
+              <div class="bg-transparent backdrop-blur-md px-8 py-6 sm:px-12 sm:py-4 flex justify-between">
                 <button
                   onClick={closeModal}
                   type="button"
                   class="inline-flex items-center justify-center px-6 py-3 bg-red-700 text-white hover:bg-red-400 hover:text-gray-900 font-bold rounded-md shadow-md transition duration-300 ease-in-out"
                 >
                   Close
+                </button>
+                <button
+
+                  type="button"
+                  class="inline-flex items-center justify-center px-6 py-3 bg-green-700 text-white hover:bg-green-400 hover:text-gray-900 font-bold rounded-md shadow-md transition duration-300 ease-in-out"
+                >
+                  Submit
                 </button>
               </div>
             </div>
