@@ -5,7 +5,7 @@
   <h2>Track:- Project Workflow</h2>
   <h3>Our Dashing website is now live</h3>
   <p>Click the following link to visit YumYard:</p>
-    <a href="https://yumyard-nine.vercel.app/">Visit Website</a> -->
+    <a href="https://yumyard-vert.vercel.app/">Visit Website</a> -->
   <p align="center">
     Use this readme for getting stared with this project
   </p>
@@ -37,52 +37,52 @@
 </video>](https://github.com/BIBHAB22/Inter-hacktive/assets/113331341/cb377366-ba93-4bea-98cf-b244fb1aa15b
 ) -->
 
-## 🚀Screenshots
+## 😋Screenshots
 
-🚀 Food Delivery Web Application
+😋 Food Delivery Web Application
 
-🚀 **Home Screen**
+😋 **Home Screen**
 
 <div align="center">
   <img src="readme images\home.jpeg" alt="pic" align="center" style="width: 100%;" />
 </div>
 
-🚀 **What's in your mind**
+😋 **What's in your mind**
 
 <div align="center">
   <img src="readme images\menu.jpeg" alt="pic" align="center" style="width: 100%;" />
 </div>
 
-🚀  **Services**
+😋  **Services**
 
 <div align="center">
   <img src="readme images\services.jpeg" alt="pic" align="center" style="width: 100%;" />
 </div>
 
-🚀 **Prices**
+😋 **Prices**
 
 <div align="center">
   <img src="readme images\price.jpeg" alt="pic" align="center" style="width: 100%;" />
 </div>
 
-🚀 **Testimonials**
+😋 **Testimonials**
 <div align="center">
   <img src="readme images\testimonials.jpeg" alt="pic" align="center" style="width: 100%;" />
 </div>
 
- 🚀 **Chat bot**
+ 😋 **Chat bot**
 <div align="center">
   <img src="readme images\chatbot.png" alt="pic" align="center" style="width: 100%;" />
 </div>
 
-🚀 **Modal**
+😋 **Modal**
 
 <div align="center">
   <img src="readme images\modal.png" alt="pic" align="center" style="width: 100%;" />
 </div>
 
 
-## 🚀Project Idea
+## 😋Project Idea
 
 
 **We Developed a Food delivery website using React Js. Our website was meticulously developed by a dedicated team of designers and programmers. From concept to code, we fused creativity and technology to bring you an intuitive and visually captivating platform. Seamlessly integrating design and functionality, we've created an engaging digital experience tailored to your needs. How did it work? Food delivery website has a full Stack Project.Our platform operates through a user-friendly interface, offering intuitive navigation and interactive elements. Users can effortlessly explore informative sections, access comprehensive tour plans, and seamlessly connect with the world with our user. Behind the scenes, responsive design guarantee a smooth experience across devices. Experience the synergy of cutting-edge technology and user-centric design.**
