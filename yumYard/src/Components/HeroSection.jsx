@@ -1,9 +1,11 @@
 import React from "react";
+import { Dropdown } from 'flowbite-react';
 import Customer1 from "../Images/customers/customer-1.jpg"
 import Customer2 from "../Images/customers/customer-2.jpg"
 import Customer3 from "../Images/customers/customer-3.jpg"
 import Customer4 from "../Images/customers/customer-4.jpg"
 import Customer5 from "../Images/customers/customer-5.jpg"
+import arrow from "../Images/svg/arrow-down-short.svg";
 export const HeroSection = () => {
   return (
     <div class="relative w-full">
@@ -15,16 +17,26 @@ export const HeroSection = () => {
                 Your favorite dishes, right at your door
               </h1>
               <form action="" class="w-full mt-12">
-                <div class="relative flex p-1 rounded-full bg-white border border-yellow-200 shadow-md md:p-2">
-                  <select
-                    class="hidden p-3 rounded-full bg-transparent md:block md:p-4"
+                <div class="relative gap-x-3 flex p-1 rounded-full bg-white border border-yellow-200 shadow-md md:p-2">
+
+                  <Dropdown label="Category" dismissOnClick={false} renderTrigger={() => <span><div className="border flex cursor-pointer rounded-full p-3 md:block md:p-4">
+                    Category
+                  </div>
+                  </span>}>
+                    <Dropdown.Item>Dashboard</Dropdown.Item>
+                    <Dropdown.Item>Settings</Dropdown.Item>
+                    <Dropdown.Item>Earnings</Dropdown.Item>
+                    <Dropdown.Item>Sign out</Dropdown.Item>
+                  </Dropdown>
+                  {/* <select
+                    class="hidden rounded-full p-3 md:block md:p-4"
                     name="domain"
                     id="domain"
                   >
                     <option value="design">FastFood</option>
                     <option value="development">Restaurant</option>
                     <option value="marketing">Marketing</option>
-                  </select>
+                  </select> */}
                   <input
                     placeholder="Your favorite food"
                     class="w-full p-4 rounded-full"
@@ -71,9 +83,9 @@ export const HeroSection = () => {
                       decoding="async"
                       data-nimg="1"
                       class="object-cover !m-0 !p-0 object-top rounded-full w-10 h-10 sm:h-12 sm:w-12 border-2   group-hover:scale-105 group-hover:z-30 border-black relative transition duration-500 undefined undefined"
-                      
+
                       src={Customer1}
-                    
+
                     />
                   </a>
                   <a
@@ -89,9 +101,9 @@ export const HeroSection = () => {
                       decoding="async"
                       data-nimg="1"
                       class="object-cover !m-0 !p-0 object-top rounded-full w-10 h-10 sm:h-12 sm:w-12 border-2   group-hover:scale-105 group-hover:z-30 border-black relative transition duration-500 undefined undefined"
-                      
+
                       src={Customer2}
-                    
+
                     />
                   </a>
                   <a
@@ -107,9 +119,9 @@ export const HeroSection = () => {
                       decoding="async"
                       data-nimg="1"
                       class="object-cover !m-0 !p-0 object-top rounded-full w-10 h-10 sm:h-12 sm:w-12 border-2   group-hover:scale-105 group-hover:z-30 border-black relative transition duration-500 undefined undefined"
-                      
+
                       src={Customer3}
-                    
+
                     />
                   </a>
                   <a
@@ -125,9 +137,9 @@ export const HeroSection = () => {
                       decoding="async"
                       data-nimg="1"
                       class="object-cover !m-0 !p-0 object-top rounded-full w-10 h-10 sm:h-12 sm:w-12 border-2   group-hover:scale-105 group-hover:z-30 border-black relative transition duration-500 undefined undefined"
-                      
+
                       src={Customer4}
-                    
+
                     />
                   </a>
                   <a
@@ -143,18 +155,18 @@ export const HeroSection = () => {
                       decoding="async"
                       data-nimg="1"
                       class="object-cover !m-0 !p-0 object-top rounded-full w-10 h-10 sm:h-12 sm:w-12 border-2   group-hover:scale-105 group-hover:z-30 border-black relative transition duration-500 undefined undefined"
-                      
+
                       src={Customer5}
-                    
+
                     />
                   </a>
                 </div>
                 <p class=" flex justify-between gap-5 items-center  text-base font-medium text-black">
                   <span className="font-extarabold text-4xl text-yellow-400">
-                  60,000+ </span>  <p className="text-2xl font-bold">Happy Customers</p>
-                  </p>
-                 
-             
+                    60,000+ </span>  <p className="text-2xl font-bold">Happy Customers</p>
+                </p>
+
+
               </div>
             </div>
 

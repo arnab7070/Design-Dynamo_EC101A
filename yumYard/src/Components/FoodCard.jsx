@@ -121,6 +121,8 @@ const ProjectCard = ({ imgUrl, title, price, features }) => {
                       </p>
                       <input
                         type="number"
+                        min={1}
+                        max={10}
                         value={quantity}
                         onChange={handleChangeQuantity}
                         className="mt-3 p-2 border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm rounded-md"
