@@ -1,11 +1,11 @@
-# Design-Dynamo_EC101A
+# DevWrap-2024
 <div align="center">
   <!-- <img src="https://india-aura.vercel.app/static/media/Indiaaura-logo.b542c4a66b151cb0830c.png" alt="Logo" width="120" height="120"/> -->
   <h2>YumYard</h2>
   <h2>Track:- Project Workflow</h2>
   <h3>Our Dashing website is now live</h3>
-  <!-- <p>Click the following link to visit India Aura:</p>
-    <a href="https://india-aura.vercel.app/">Visit Website</a> -->
+  <p>Click the following link to visit YumYard:</p>
+    <a href="https://yumyard-nine.vercel.app/">Visit Website</a> -->
   <p align="center">
     Use this readme for getting stared with this project
   </p>
@@ -147,20 +147,17 @@ YumYard addresses these issues by providing:
 - Personalized User Experience:
   - Account creation and user profile management.
   - Personalized recommendations based on past searches and order history.
-- In Whole App user found a **Chat Bot** named **Tourism Helper** if user give any city or region name of India the Chat Bot gives all tourist places and special things about that city or region.
+- In Whole App user found a **Chat Bot** named **Hunger Helper** if user want to know anything about order or payment the Chat Bot will give the right information about that.
 - Now after giving a feedback user can log out.
 ## ⏭Roadmap
 - [x] landing page
-- [x] Website Stats
-- [x] Authentication System with MongoDB
 - [x] About Page
-- [x] Dream Tour
-- [x] Blog 
-- [x] Register/Login
+- [x] Our Menu
+- [x] Pricing
+- [x] Contact us
 - [x] Chatbot
-- [x] Incredible India
-- [x] Tour Deatils
-- [x] Backend Deploy on Render 
+- [x] Our Services
+- [x] Testimonials
 - [x] Deploy on VERCEL
 ## 🧭Getting Started
 <b>To run the project in your system you have to follow steps given bellow:</b>
@@ -191,7 +188,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## 🌊Contributors
 <div>
 <h1 align="center">
- <b>Made with ❤️ by team CODE CONQUEORS
+ <b>Made with ❤️ by team DESIGN DYNAMO
 <h1>
 </div>
 Meet the awesome people who have contributed to this project:
@@ -199,20 +196,33 @@ Meet the awesome people who have contributed to this project:
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/BIBHAB22">
-        <img src="https://avatars.githubusercontent.com/u/113331341?v=4" width="100px;" alt="ritesh2004" style="border-radius:50%"/>
+      <a href="https://github.com/arnab7070">
+        <img src="readme images\Arnab.jpg" width="100px;" alt="arnab7070" style="border-radius:50%"/>
         <br />
-        <sub><b>BIBHAB MUKHOPADHYAY [Lead]</b></sub>
+        <sub><b>Arnab Nandi[Lead]</b></sub>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/https://github.com/Dibyajyoti011">
-        <img src="https://avatars.githubusercontent.com/u/116632776?v=4" width="100px;" alt="moh-15" style="border-radius:60%"/>
+      <a href="https://github.com/supra707">
+        <img src="readme images\Supratik_De.jpg" width="100px;" alt="supra707" style="border-radius:50%"/>
         <br />
-        <sub><b>Dibyajyoti Biswas</b></sub>
+        <sub><b>Supratik De</b></sub>
       </a>
     </td>
-    
+    <td align="center">
+      <a href="https://github.com/Bineet09">
+        <img src="readme images\BineetChattopadhyay.jpg" width="100px;" alt="bineet09" style="border-radius:50%"/>
+        <br />
+        <sub><b>Bineet Chattopadhyay</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/BIBHAB22">
+        <img src="https://avatars.githubusercontent.com/u/113331341?v=4" width="100px;" alt="BIBHAB22" style="border-radius:50%"/>
+        <br />
+        <sub><b>BIBHAB MUKHOPADHYAY</b></sub>
+      </a>
+    </td>
   </tr>
 </table>
 
