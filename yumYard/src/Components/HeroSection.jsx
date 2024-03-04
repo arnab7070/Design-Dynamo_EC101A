@@ -20,15 +20,15 @@ export const HeroSection = () => {
               </h1>
               <form action="" class="w-full mt-12">
                 <div class="relative gap-x-3 flex p-1 rounded-full bg-white border border-yellow-200 shadow-md md:p-2">
-                  <div className="border pr-3 rounded-full ">
-                  <Dropdown className="bg-transparent backdrop-blur-md" label="Category" dismissOnClick={true} renderTrigger={() => <span><div className="inline-flex cursor-pointer rounded-full p-3 md:p-4">
-                    Category <img src={arrow} alt="arrow" />
-                  </div>
-                  </span>}>
-                    <Dropdown.Item>FastFood</Dropdown.Item>
-                    <Dropdown.Item>Restaurant</Dropdown.Item>
-                    <Dropdown.Item>Take Out</Dropdown.Item>
-                  </Dropdown>
+                  <div className="border border-gray-500 pr-3 rounded-full ">
+                    <Dropdown className="bg-transparent backdrop-blur-md" label="Category" dismissOnClick={true} renderTrigger={() => <span><div className="inline-flex cursor-pointer rounded-full p-3 md:p-4">
+                      Category <img src={arrow} alt="arrow" />
+                    </div>
+                    </span>}>
+                      <Dropdown.Item>FastFood</Dropdown.Item>
+                      <Dropdown.Item>Restaurant</Dropdown.Item>
+                      <Dropdown.Item>Take Out</Dropdown.Item>
+                    </Dropdown>
                   </div>
                   <input
                     placeholder="Your favorite food"
@@ -165,11 +165,11 @@ export const HeroSection = () => {
 
             <div class="ml-auto -mb-24 lg:-mb-56 lg:w-6/12">
               <Lottie animationData={burger} />
-            
+
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
   );
 };
