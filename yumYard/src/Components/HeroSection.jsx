@@ -24,14 +24,14 @@ export const HeroSection = () => {
                 <div class="relative gap-x-3 flex p-1 rounded-full bg-white border border-yellow-200 shadow-md md:p-2">
                   <div className="border border-gray-500 pr-3 rounded-full ">
                     <Dropdown
-                      className="bg-transparent backdrop-blur-md mt-6"
+                      className="bg-transparent backdrop-blur-sm mt-6 flex justify-center items-center"
                       label="Category"
                       dismissOnClick={true}
                       renderTrigger={() => (
                         <span>
                           <div className="inline-flex cursor-pointer rounded-full p-3 md:p-4">
-                            Category 
-                      <img src={arrow} alt="arrow" className="ml-2 mt-1" />
+                            Category
+                            <img src={arrow} alt="arrow" className="ml-2 mt-1" />
                           </div>
                         </span>
                       )}
@@ -158,10 +158,10 @@ export const HeroSection = () => {
               </div>
             </div>
 
-             
-              {/* Adjust width and height as needed */}
-              <Lottie animationData={burger} />
-        
+
+            {/* Adjust width and height as needed */}
+            <Lottie animationData={burger} />
+
           </div>
         </div>
       </div>
