@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import { FcBinoculars, FcInTransit, FcSms, FcAssistant } from 'react-icons/fc';
+import { FcBinoculars, FcInTransit, FcSms, FcAssistant, FcFlashOn, FcGenealogy } from 'react-icons/fc';
 
 const serviceData = [
     {
@@ -27,6 +27,18 @@ const serviceData = [
         description: "Read and contribute genuine reviews to help others discover great food. Enjoy the service now!",
         icon: FcSms,
         color: "green",
+    },
+    {
+        title: "Exclusive Deals",
+        description: "Discover exclusive deals and discounts on your favorite food items and restaurants.",
+        icon: FcFlashOn,
+        color: "red",
+    },
+    {
+        title: "Customized Recommendations",
+        description: "Get personalized food recommendations based on your preferences and previous orders.",
+        icon: FcGenealogy,
+        color: "cyan",
     }
 ];
 
@@ -54,7 +66,7 @@ const Services = () => {
     return (
         <section id='services' className="text-gray-800 body-font">
             <div className="container px-5 py-24 mx-auto ">
-                <div className="flex flex-col text-center w-full mb-20">
+                <div data-aos="fade-down" className="flex flex-col text-center w-full mb-20">
                     <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-orange-500">Explore, Order, and Discover Delicious Food</h1>
                     <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Your one-stop shop for all your food needs.</p>
                 </div>

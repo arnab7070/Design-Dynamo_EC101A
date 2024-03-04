@@ -86,31 +86,31 @@ const Footer = () => {
                 <div className="text-white pb-4 text-start text-xl space-x-2 md:pb-0 md:space-x-1">
                   <a
                     href="#"
-                    className="w-8 h-8 pl-2 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"
+                    className="w-8 h-8  bg-orange-500 hover:text-orange-500 inline-flex justify-center items-center rounded-full pt-[3px] hover:bg-white"
                   >
                     <FontAwesomeIcon icon={faTwitter} />
                   </a>
                   <a
                     href="#"
-                    className="w-8 h-8 pl-2 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"
+                    className="w-8 h-8  bg-orange-500 hover:text-orange-500 inline-flex justify-center items-center rounded-full pt-[3px] hover:bg-white"
                   >
                     <FontAwesomeIcon icon={faInstagram} />
                   </a>
                   <a
                     href="#"
-                    className="w-8 h-8 pl-2 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"
+                    className="w-8 h-8  bg-orange-500 hover:text-orange-500 inline-flex justify-center items-center rounded-full pt-[3px] hover:bg-white"
                   >
                     <FontAwesomeIcon icon={faFacebook} />
                   </a>
                   <a
                     href="#"
-                    className="w-8 h-8 pl-2 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"
+                    className="w-8 h-8  bg-orange-500 hover:text-orange-500 inline-flex justify-center items-center rounded-full pt-[3px] hover:bg-white"
                   >
                     <FontAwesomeIcon icon={faGoogle} />
                   </a>
                   <a
                     href="#"
-                    className="w-8 h-8 pl-2 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"
+                    className="w-8 h-8  bg-orange-500 hover:text-orange-500 inline-flex justify-center items-center rounded-full pt-[3px] hover:bg-white"
                   >
                     <FontAwesomeIcon icon={faLinkedin} />
                   </a>
