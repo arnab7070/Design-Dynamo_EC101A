@@ -8,7 +8,7 @@ const serviceData = [
         title: "Wide Restaurant Selection",
         description: "Find a diverse range of restaurants to different cuisines, budgets, and dietary preferences (gluten-free, vegan, etc.).",
         icon: FcBinoculars,
-        color: "orange",
+        color: "green",
     },
     {
         title: "Seamless Delivery Management",
@@ -20,25 +20,25 @@ const serviceData = [
         title: "Convenient Food Ordering",
         description: "Order your favorite dishes directly through our app or website with real-time order tracking.",
         icon: FcAssistant,
-        color: "red",
+        color: "green",
     },
     {
         title: "Community Reviews & Ratings",
         description: "Read and contribute genuine reviews to help others discover great food. Enjoy the service now!",
         icon: FcSms,
-        color: "green",
+        color: "pink",
     },
     {
         title: "Exclusive Deals",
         description: "Discover exclusive deals at your fingertips and discounts on your favorite food items and restaurants.",
         icon: FcFlashOn,
-        color: "red",
+        color: "green",
     },
     {
         title: "Customized Recommendations",
         description: "Get personalized food recommendations based on your preferences and previous orders.",
         icon: FcGenealogy,
-        color: "cyan",
+        color: "pink",
     }
 ];
 
@@ -47,7 +47,7 @@ const ServiceItem = ({ title, description, icon: Icon, color }) => {
         Aos.init({
             duration: 400,
             easing: 'ease-in',
-            offset: 50,
+            offset: 10,
         });
     }, []);
 
