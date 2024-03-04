@@ -5,7 +5,7 @@ import { faTwitter, faInstagram, faFacebook, faGoogle, faLinkedin } from "@forta
 const Footer = () => {
   return (
     <div>
-      <div class="flex items-center justify-around">
+      <div class="flex items-center justify-around border-t-2">
         <div class="items-start relative w-full flex flex-row justify-between">
           <div class="relative">
             <div class="p-3 space-y-10 md:grid md:grid-cols-2 md:-mt-6 lg:grid-cols-4">

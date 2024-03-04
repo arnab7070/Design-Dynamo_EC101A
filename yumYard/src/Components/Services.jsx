@@ -30,7 +30,7 @@ const serviceData = [
     },
     {
         title: "Exclusive Deals",
-        description: "Discover exclusive deals and discounts on your favorite food items and restaurants.",
+        description: "Discover exclusive deals at your fingertips and discounts on your favorite food items and restaurants.",
         icon: FcFlashOn,
         color: "red",
     },

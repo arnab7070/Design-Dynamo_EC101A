@@ -82,7 +82,10 @@ now you are got to go for hacking !!
 - React
 - Tailwind CSS
 
+## Screenshots
+- 🚀 Hero Section
 
+[![home.png](https://i.postimg.cc/7Gcnvs7j/home.png)](https://postimg.cc/7Gcnvs7j)
 
 ## Authors
 Made with hunger by:
