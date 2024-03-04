@@ -70,24 +70,16 @@
   <img src="readme images\testimonials.jpeg" alt="pic" align="center" style="width: 100%;" />
 </div>
 
-<!-- 🚀 **Chat bot**
+ 🚀 **Chat bot**
 <div align="center">
-  <img src="client\src\components\image\readme images\chatbot.png" alt="pic" align="center" style="width: 100%;" />
+  <img src="readme images\chatbot.png" alt="pic" align="center" style="width: 100%;" />
 </div>
 
-🚀 **Register_page**
+🚀 **Modal**
 
 <div align="center">
-  <img src="client\src\components\image\readme images\registration.png" alt="pic" align="center" style="width: 100%;" />
+  <img src="readme images\modal.png" alt="pic" align="center" style="width: 100%;" />
 </div>
-
-🚀 **Login_page**
-
-<div align="center">
-  <img src="client\src\components\image\readme images\login.png" alt="pic" align="center" style="width: 100%;" />
-</div> -->
-
-
 
 
 ## 🚀Project Idea
