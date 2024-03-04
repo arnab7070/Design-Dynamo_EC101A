@@ -83,8 +83,9 @@ now you are got to go for hacking !!
 - Tailwind CSS
 
 ## Screenshots
-🚀 Hero Section
-[![Screenshot-2024-03-03-194107.png](https://i.postimg.cc/gX1WQp0R/Screenshot-2024-03-03-194107.png)](https://postimg.cc/gX1WQp0R)
+- 🚀 Hero Section
+
+[![home.png](https://i.postimg.cc/7Gcnvs7j/home.png)](https://postimg.cc/7Gcnvs7j)
 
 ## Authors
 Made with hunger by:
