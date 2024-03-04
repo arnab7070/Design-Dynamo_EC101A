@@ -8,6 +8,8 @@ import PricingCard from '../Components/PricingCard'
 import NumberSection from '../Components/NumberSection'
 import FoodSection from '../Components/FoodSection'
 import Testimonials from '../Components/Testimonials'
+import AboutUs from '../Components/AboutUs'
+
 export const Home = () => {
     return (
         <div >
@@ -21,6 +23,7 @@ export const Home = () => {
                 <ContactForm />
                 <Testimonials/>
                 <FooterComponent/>
+                <AboutUs/>
             </div>
         </div>
     )

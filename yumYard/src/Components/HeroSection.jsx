@@ -41,7 +41,7 @@ export const HeroSection = () => {
                       <Dropdown.Item className="font-semibold">Take Out</Dropdown.Item>
                     </Dropdown>
                   </div>
-                  <div className="w-full pt-2"><FloatingLabel className="rounded-full" variant="outlined" label="Your favorite food" /></div>
+                  <div className="w-full pt-2"><FloatingLabel className="rounded-full" variant="filled" label="Your favorite food" /></div>
                   <button
                     type="button"
                     title="Start buying"
