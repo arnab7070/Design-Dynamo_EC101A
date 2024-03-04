@@ -1,18 +1,23 @@
 import React, { useState } from "react";
-import Chilli from "../assets/chilli.json"
+import Chilli from "../assets/chilli.json";
 import Lottie from "lottie-react";
 const ProjectCard = ({ imgUrl, title, price, features }) => {
   const [showModal, setShowModal] = useState(false);
   const [quantity, setQuantity] = useState(1);
+  const increment = () => {
+    console.log("Increment button clicked");
+    setQuantity((prevQuantity) => prevQuantity + 1);
+  };
 
+  const decrement = () => {
+    console.log("Decrement button clicked");
+    if (quantity > 1) {
+      setQuantity((prevQuantity) => prevQuantity - 1);
+    }
+  };
   const handleOrderNow = () => {
     setShowModal(true);
   };
-
-  const handleChangeQuantity = (e) => {
-    setQuantity(parseInt(e.target.value));
-  };
-
   const closeModal = () => {
     setShowModal(false);
   };
@@ -98,48 +103,66 @@ const ProjectCard = ({ imgUrl, title, price, features }) => {
               &#8203;
             </span>
             {/* Actual modal */}
-            <div class="inline-block align-bottom rounded-lg text-left overflow-hidden shadow-2xl transform transition-all ease-in-out duration-500 sm:my-8 sm:align-middle sm:max-w-3xl sm:w-full backdrop-blur-md border-2">
+            <div class="inline-block bg-[#faedda] bg-opacity-50 align-bottom rounded-lg text-left overflow-hidden shadow-2xl transform transition-all ease-in-out duration-500 sm:my-8 sm:align-middle sm:max-w-3xl sm:w-full backdrop-blur-md border-2">
               <div class=" px-8  sm:px-12 sm:py-8">
                 <div class="sm:flex sm:items-center">
                   <div class="text-center sm:text-left">
-                    <h3 class="text-3xl font-extrabold text-black mb-4">
+                    <h3 class="text-3xl mt-6 md:mt-0 font-extrabold text-black mb-4">
                       Order Details
                     </h3>
-                    <div class="mb-6">
+                    <div class="md:mb-6 mb-0">
                       <p class="text-lg font-bold text-black mb-2">
                         Adjust the quantity of items you want to order.
                       </p>
-                      <input
-                        type="number"
-                        min={1}
-                        max={10}
-                        value={quantity}
-                        onChange={handleChangeQuantity}
-                        class="w-32 p-4 font-bold bg-white border-2 border-gray-300 focus:outline-none focus:ring-2 rounded-md text-center text-gray-800 text-lg"
-                      />
+                      <div className="flex  md:items-center  justify-center md:justify-start  space-x-4">
+                        {" "}
+                        {/* Adjusted width and added spacing */}
+                        <button
+                          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                          onClick={decrement}
+                        >
+                          -
+                        </button>{" "}
+                        {/* Styled "-" button */}
+                        <div className="w-24 p-4 font-bold bg-white rounded-md text-center text-gray-800 text-lg">
+                          {quantity}
+                        </div>
+                        <button
+                          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                          onClick={increment}
+                        >
+                          +
+                        </button>{" "}
+                        {/* Styled "+" button */}
+                      </div>
+
                       <p class="text-xl font-bold text-black mt-4">
                         Total Amount: ₹ {price * quantity}
                       </p>
                     </div>
                   </div>
-                  <Lottie animationData={Chilli} style={{ width: 200, height: 200 }} />
+                  <Lottie
+                    animationData={Chilli}
+                    style={{ width: 300, height: 300 }}
+                  />
                 </div>
               </div>
               <div class="bg-transparent backdrop-blur-md px-8 py-6 sm:px-12 sm:py-4 flex justify-between">
-                <button
+                <a
+                  href="#_"
+                  class="relative rounded px-5 py-2.5 overflow-hidden group bg-red-500  hover:bg-gradient-to-r hover:from-red-500 hover:to-red-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-red-400 transition-all ease-out duration-300"
                   onClick={closeModal}
-                  type="button"
-                  class="inline-flex items-center justify-center px-6 py-3 bg-red-700 text-white hover:bg-red-400 hover:text-gray-900 font-bold rounded-md shadow-md transition duration-300 ease-in-out"
                 >
-                  Close
-                </button>
-                <button
-
-                  type="button"
-                  class="inline-flex items-center justify-center px-6 py-3 bg-green-700 text-white hover:bg-green-400 hover:text-gray-900 font-bold rounded-md shadow-md transition duration-300 ease-in-out"
+                  <span class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
+                  <button class="relative">Close</button>
+                </a>
+                <a
+                  href="#_"
+                  class="relative rounded px-5 py-2.5 overflow-hidden group bg-green-500 hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300"
                 >
-                  Submit
-                </button>
+                  <span class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
+                  <span class="relative">Submit</span>
+                </a>
               </div>
             </div>
           </div>
