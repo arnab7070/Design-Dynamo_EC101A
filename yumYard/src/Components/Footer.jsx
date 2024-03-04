@@ -1,213 +1,134 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTwitter, faInstagram, faFacebook, faGoogle, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
     <div>
-      <div class=" flex items-center justify-around">
-        {" "}
+      <div class="flex items-center justify-around">
         <div class="items-start relative w-full flex flex-row justify-between">
-          {" "}
           <div class="relative">
-            {" "}
-            <div class=" p-3 space-y-10  md:grid md:grid-cols-2 md:-mt-6 lg:grid-cols-4">
-              {" "}
+            <div class="p-3 space-y-10 md:grid md:grid-cols-2 md:-mt-6 lg:grid-cols-4">
               <div class="w-1/2 md:ml-24 md:mt-9 md:w-3/4">
-                {" "}
-                <h1 class="text-black text-xl font-medium">Company</h1>{" "}
-                <br />{" "}
+                <h1 class="text-black text-xl font-medium">YumYard</h1>
+                <br />
                 <p class="text-gray-700 font-medium text-base hover:text-orange-500 ">
-                  {" "}
-                  A123 Lost Street <br /> Chandigarh, PB 535022 <br />India{" "}
-                </p>{" "}
-                <br />{" "}
+                  Adisaptagram <br /> West Bengal 712502 India{" "}<br />
+                </p>
+                <br />
                 <p class="text-gray-700 font-medium text-base hover:text-orange-500 cursor-pointer">
-                  {" "}
                   <strong class="tracking-wide text-black font-normal">
                     Phone:
                   </strong>{" "}
                   +91 7008090111{" "}
-                </p>{" "}
+                </p>
                 <p class="text-gray-700 font-medium text-base hover:text-orange-500 cursor-pointer">
-                  {" "}
                   <strong class="tracking-wide text-black font-normal">
                     Email:
                   </strong>{" "}
                   info@gmail.com{" "}
-                </p>{" "}
-              </div>{" "}
+                </p>
+              </div>
               <div class="leading-9 md:w-2/4 md:order-3 md:ml-24">
-                {" "}
                 <h1 class="text-black text-xl font-medium tracking-[0.030rem]">
-                  {" "}
-                  Useful Links{" "}
-                </h1>{" "}
+                  Useful Links
+                </h1>
                 <ul class="mt-2 text-gray-700 font-medium">
-                  {" "}
                   <li>
-                    {" "}
                     <i class="fa fa-chevron-right text-black"></i>{" "}
                     <a href="#" class="hover:text-orange-500">
-                      {" "}
                       Home
                     </a>{" "}
-                  </li>{" "}
+                  </li>
                   <li>
-                    {" "}
                     <i class="fa fa-chevron-right text-black"></i>{" "}
-                    <a href="#" class="hover:text-orange-500">
-                      {" "}
+                    <a href="#about" class="hover:text-orange-500">
                       About Us
                     </a>{" "}
-                  </li>{" "}
+                  </li>
                   <li>
-                    {" "}
                     <i class="fa fa-chevron-right text-black"></i>{" "}
-                    <a href="#" class="hover:text-orange-500">
-                      {" "}
-                      Services
+                    <a href="#menu" class="hover:text-orange-500">
+                      Our Menu
                     </a>{" "}
-                  </li>{" "}
+                  </li>
                   <li>
-                    {" "}
                     <i class="fa fa-chevron-right text-black"></i>{" "}
-                    <a href="#" class="hover:text-orange-500">
-                      {" "}
-                      Terms of service
+                    <a href="#services" class="hover:text-orange-500">
+                      Our service
                     </a>{" "}
-                  </li>{" "}
-                  <li>
-                    {" "}
-                    <i class="fa fa-chevron-right text-black"></i>{" "}
-                    <a href="#" class="hover:text-orange-500">
-                      {" "}
-                      Privacy policy
-                    </a>{" "}
-                  </li>{" "}
-                </ul>{" "}
-              </div>{" "}
-              <div class="leading-9 md:w-3/4 md:order-4">
-                {" "}
+                  </li>
+                </ul>
+              </div>
+              <div class="md:order-2 lg:order-4">
                 <h1 class="text-black text-xl font-medium tracking-[0.030rem]">
-                  {" "}
-                  Our Services{" "}
-                </h1>{" "}
-                <ul class="mt-2 text-gray-700 font-medium">
-                  {" "}
-                  <li>
-                    {" "}
-                    <i class="fa fa-chevron-right text-black"></i>{" "}
-                    <a href="#" class="hover:text-orange-500">
-                      {" "}
-                      Web Design
-                    </a>{" "}
-                  </li>{" "}
-                  <li>
-                    {" "}
-                    <i class="fa fa-chevron-right text-black"></i>{" "}
-                    <a href="#" class="hover:text-orange-500">
-                      {" "}
-                      Web Development
-                    </a>{" "}
-                  </li>{" "}
-                  <li>
-                    {" "}
-                    <i class="fa fa-chevron-right text-black"></i>{" "}
-                    <a href="#" class="hover:text-orange-500">
-                      {" "}
-                      Product Management
-                    </a>{" "}
-                  </li>{" "}
-                  <li>
-                    {" "}
-                    <i class="fa fa-chevron-right text-black"></i>{" "}
-                    <a href="#" class="hover:text-orange-500">
-                      {" "}
-                      Marketing
-                    </a>{" "}
-                  </li>{" "}
-                  <li>
-                    {" "}
-                    <i class="fa fa-chevron-right text-black"></i>{" "}
-                    <a href="#" class="hover:text-orange-500">
-                      {" "}
-                      Graphic Design
-                    </a>{" "}
-                  </li>{" "}
-                </ul>{" "}
-              </div>{" "}
-              <div class="md:order-2 lg:order-last">
-                {" "}
-                <h1 class="text-black text-xl font-medium tracking-[0.030rem]">
-                  {" "}
-                  Join Our Newsletter{" "}
-                </h1>{" "}
-                <br />{" "}
+                  Join Our Newsletter
+                </h1>
+                <br />
                 <p class="text-gray-700 font-medium w-3/5 leading-7 mb-5 md:w-3/4">
-                  {" "}
-                  Join 25,000+ others and never miss out on new tips,tutorials,
-                  and more.{" "}
-                </p>{" "}
+                  Join 25,000+ others and never miss out on new tips, tutorials,
+                  and more.
+                </p>
                 <input
                   type="email"
                   placeholder="Enter E-mail Here"
-                  class="py-1 px-2 placeholder-gray-400 rounded-tl-xl focus: outline-none focus:border md:w-1/2 lg:w-3/5 border"
+                  class="py-1 px-2 placeholder-gray-400 rounded-tl-xl focus:outline-none focus:border md:w-1/2 lg:w-3/5 border"
                 />{" "}
                 <button class="text-white font-medium bg-orange-500 p-1 -translate-x-1 rounded-br-xl">
-                  {" "}
-                  Subscribe{" "}
-                </button>{" "}
-              </div>{" "}
-            </div>{" "}
-            {/* <div class="md:flex bg-[#ff8324] p-3 flex-col text-center pt-5 space-y-8 md:flex-row md:justify-between md:space-y-0">
-              {" "}
-              <div class="flex mx-3 justify-between space-x-20 md:flex-row text-gray-200 md:space-x-28 md:ml-20 lg:ml-24 lg:space-x-[13rem] xl:space-x-72 xl:ml-24">
-                {" "}
-                <p>
-                  @ Copyright <strong>Company.</strong>All Rights Reserved
-                </p>{" "}
-                <p>
-                  Designed by <span class="text-black">TailwindCSS</span>
-                </p>{" "}
-              </div>{" "}
-              <div class="text-white pb-4 text-center text-xl space-x-2 md:w-2/4 md:pb-0 md:pl-2 md:space-x-1 lg:pl-[171px] lg:space-x-2 xl:pl-44">
-                {" "}
-                <a
-                  href="#"
-                  class="w-8 h-8 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"
-                >
-                  <i class="fa fa-twitter"></i>
-                </a>{" "}
-                <a
-                  href="#"
-                  class="w-8 h-8 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"
-                >
-                  <i class="fa fa-instagram"></i>
-                </a>{" "}
-                <a
-                  href="#"
-                  class="w-8 h-8 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"
-                >
-                  <i class="fa fa-facebook"></i>
-                </a>{" "}
-                <a
-                  href="#"
-                  class="w-8 h-8 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"
-                >
-                  <i class="fa fa-google"></i>
-                </a>{" "}
-                <a
-                  href="#"
-                  class="w-8 h-8 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"
-                >
-                  <i class="fa fa-linkedin"></i>
-                </a>{" "}
-              </div>{" "}
-            </div>{" "} */}
-          </div>{" "}
-        </div>{" "}
+                  Subscribe
+                </button>
+              </div>
+              <div className="md:order-last">
+                <h1 className="text-black text-xl font-medium tracking-[0.030rem]">
+                  Social Media
+                </h1>
+                <br />
+                <div className="text-white pb-4 text-start text-xl space-x-2 md:pb-0 md:space-x-1">
+                  <a
+                    href="#"
+                    className="w-8 h-8 pl-2 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"
+                  >
+                    <FontAwesomeIcon icon={faTwitter} />
+                  </a>
+                  <a
+                    href="#"
+                    className="w-8 h-8 pl-2 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"
+                  >
+                    <FontAwesomeIcon icon={faInstagram} />
+                  </a>
+                  <a
+                    href="#"
+                    className="w-8 h-8 pl-2 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"
+                  >
+                    <FontAwesomeIcon icon={faFacebook} />
+                  </a>
+                  <a
+                    href="#"
+                    className="w-8 h-8 pl-2 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"
+                  >
+                    <FontAwesomeIcon icon={faGoogle} />
+                  </a>
+                  <a
+                    href="#"
+                    className="w-8 h-8 pl-2 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"
+                  >
+                    <FontAwesomeIcon icon={faLinkedin} />
+                  </a>
+                </div>
+                <div class="md:order-last pt-5">
+                  <p class="text-gray-700 font-medium">
+                    Copyright @2024 <strong>YumYard</strong> All Rights Reserved
+                  </p>
+                  <p class="text-gray-700 font-medium">
+                    Designed By <strong>Team Design-Dianamo</strong>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
   );
 };
 
