@@ -6,15 +6,17 @@ import Customer3 from "../Images/customers/customer-3.jpg"
 import Customer4 from "../Images/customers/customer-4.jpg"
 import Customer5 from "../Images/customers/customer-5.jpg"
 import arrow from "../Images/svg/arrow-down-short.svg";
+import Lottie from "lottie-react";
+import burger from "../assets/burger.json"
 export const HeroSection = () => {
-  return (
+  return ( 
     <div class="relative w-full">
       <div class="relative bg-yellow-50">
         <div class="container m-auto px-6 pt-23 md:px-12 lg:pt-[1.5rem] lg:px-9 lg:pl-20">
           <div class="flex items-center flex-wrap px-2 md:px-0">
             <div class="relative lg:w-6/12 lg:py-24 xl:py-32">
-              <h1 class="font-bold text-4xl text-yellow-900 md:text-5xl lg:w-10/12">
-                Your favorite dishes, right at your door
+              <h1 class="font-bold text-4xl text-yellow-900 md:text-5xl">
+              Savor Every Bite: Delightful Dishes Delivered to Your Doorstep
               </h1>
               <form action="" class="w-full mt-12">
                 <div class="relative gap-x-3 flex p-1 rounded-full bg-white border border-yellow-200 shadow-md md:p-2">
@@ -30,6 +32,9 @@ export const HeroSection = () => {
                   </Dropdown>
                   {/* <select
                     class="hidden rounded-full p-3 md:block md:p-4"
+                <div class="relative flex p-1 gap-x-4 rounded-full bg-white border border-yellow-200 shadow-md md:p-2">
+                  <select
+                    class="hidden p-3 rounded-full bg-transparent md:block md:p-4"
                     name="domain"
                     id="domain"
                   >
@@ -171,14 +176,7 @@ export const HeroSection = () => {
             </div>
 
             <div class="ml-auto -mb-24 lg:-mb-56 lg:w-6/12">
-              <img
-                src="https://tailus.io/sources/blocks/food-delivery/preview/images/food.webp"
-                class="relative"
-                alt="food illustration"
-                loading="lazy"
-                width="4500"
-                height="4500"
-              />
+                <Lottie animationData={burger} />
             </div>
           </div>
         </div>
