@@ -9,7 +9,7 @@ import arrow from "../Images/svg/arrow-down-short.svg";
 import Lottie from "lottie-react";
 import burger from "../assets/burger.json";
 import { FloatingLabel } from 'flowbite-react';
-
+import CountUp from 'react-countup';
 export const HeroSection = () => {
   return (
     <div class="relative w-full">
@@ -151,8 +151,9 @@ export const HeroSection = () => {
                     />
                   </a>
                 </div>
-                <p class="delivered-text">
-                <span>250,000+</span> meals delivered last year!
+                <p class="delivered-text flex gap-x-3">
+                <CountUp start={0} end={250000} duration={3} suffix="+" />
+                <div>meals delivered last year!</div>
               </p>
               </div>
             </div>
