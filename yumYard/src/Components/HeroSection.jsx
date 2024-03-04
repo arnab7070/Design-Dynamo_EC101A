@@ -165,9 +165,7 @@ export const HeroSection = () => {
 
             <div class="ml-auto -mb-24 lg:-mb-56 lg:w-6/12">
               <Lottie animationData={burger} />
-            <div class="ml-auto mb-56 lg:-mb-56 lg:w-6/12">
-                <Lottie animationData={burger} />
-            </div>
+            
           </div>
         </div>
       </div>
