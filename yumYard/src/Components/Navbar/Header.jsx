@@ -3,7 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
 import images from "../../constants/images";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { faShoppingCart, faEnvelopeOpen, faTags, faBars, faAddressCard, faHouse } from "@fortawesome/free-solid-svg-icons";
 
 import "./Navbar.css";
 import Panel from "../Cart/Panel";
@@ -36,6 +36,7 @@ const Header = () => {
             </span>
             <span class="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full translate-y-full bg-orange-300 rounded-2xl group-hover:mb-12 group-hover:translate-x-0"></span>
             <span class="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-black">
+              <FontAwesomeIcon className="mr-2" icon={faHouse} />
               Home
             </span>
           </a>
@@ -50,6 +51,7 @@ const Header = () => {
             </span>
             <span class="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full translate-y-full bg-orange-300 rounded-2xl group-hover:mb-12 group-hover:translate-x-0"></span>
             <span class="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-black">
+              <FontAwesomeIcon className="mr-2" icon={faAddressCard} />
               About
             </span>
           </a>
@@ -64,6 +66,7 @@ const Header = () => {
             </span>
             <span class="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full translate-y-full bg-orange-300 rounded-2xl group-hover:mb-12 group-hover:translate-x-0"></span>
             <span class="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-black">
+              <FontAwesomeIcon className="mr-2" icon={faBars} />
               Menu
             </span>
           </a>
@@ -78,6 +81,7 @@ const Header = () => {
             </span>
             <span class="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full translate-y-full bg-orange-300 rounded-2xl group-hover:mb-12 group-hover:translate-x-0"></span>
             <span class="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-black">
+              <FontAwesomeIcon className="mr-2" icon={faTags} />
               Pricing
             </span>
           </a>
@@ -93,6 +97,7 @@ const Header = () => {
             </span>
             <span class="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full translate-y-full bg-orange-300 rounded-2xl group-hover:mb-12 group-hover:translate-x-0"></span>
             <span class="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-black">
+              <FontAwesomeIcon className="mr-2" icon={faEnvelopeOpen} />
               Contact Us
             </span>
           </a>
@@ -108,7 +113,7 @@ const Header = () => {
             </span>
             <span class="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full translate-y-full bg-orange-300 rounded-2xl group-hover:mb-12 group-hover:translate-x-0"></span>
             <span class="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-black">
-            <FontAwesomeIcon className="mr-2" icon= {faShoppingCart} />
+              <FontAwesomeIcon className="mr-2" icon={faShoppingCart} />
               Cart
             </span>
           </a>
@@ -130,7 +135,7 @@ const Header = () => {
             data-rounded="rounded-lg"
           ></span>
         </a>
-        <div className="bg-orange-700 "  />
+        <div className="bg-orange-700 " />
         <a href="#_" class="relative inline-block text-lg group">
           <span class="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
             <span class="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
