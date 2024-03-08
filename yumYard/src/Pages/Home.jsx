@@ -9,6 +9,7 @@ import NumberSection from '../Components/NumberSection'
 import FoodSection from '../Components/FoodSection'
 import Testimonials from '../Components/Testimonials'
 import AboutUs from '../Components/AboutUs'
+import TestCart from '../Components/TestCart'
 
 export const Home = () => {
     return (
@@ -24,6 +25,7 @@ export const Home = () => {
                 <ContactForm />
                 <Testimonials/>
                 <FooterComponent/>
+                <TestCart/>
             </div>
         </div>
     )
