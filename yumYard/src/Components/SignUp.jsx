@@ -1,5 +1,6 @@
 import React from 'react'
-
+import Lottie from "lottie-react";
+import awesome from "../assets/login.json";
 const SignUp = () => {
   return (
    <div className="bg-gradient-to-r from-amber-200 to-yellow-300">
