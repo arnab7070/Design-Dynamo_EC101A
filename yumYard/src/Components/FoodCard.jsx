@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Chilli from "../assets/chilli.json";
 import Lottie from "lottie-react";
+import useStore from "./Cart/store";
+
 const ProjectCard = ({ imgUrl, title, price, features }) => {
   const [showModal, setShowModal] = useState(false);
   const [quantity, setQuantity] = useState(1);
@@ -20,6 +22,14 @@ const ProjectCard = ({ imgUrl, title, price, features }) => {
   };
   const closeModal = () => {
     setShowModal(false);
+  };
+
+  // Sending object to cart
+  const addObjectToList = useStore((state) => state.addObject);
+
+  const handleSendData = () => {
+  const newObject = { title: title, quant: quantity, price: price, image: imgUrl };
+  addObjectToList(newObject);
   };
 
   return (
@@ -168,7 +178,10 @@ const ProjectCard = ({ imgUrl, title, price, features }) => {
                   </button>
                 </div>
                 <div class="m-3">
-                  <button class="bg-white text-gray-800 font-bold rounded border-b-2 border-green-500 hover:border-green-600 hover:bg-green-500 hover:text-white shadow-md py-2 px-6 inline-flex items-center">
+                  <button 
+                  onClick={handleSendData}
+                  class="bg-white text-gray-800 font-bold rounded border-b-2 border-green-500 hover:border-green-600 hover:bg-green-500 hover:text-white shadow-md py-2 px-6 inline-flex items-center"
+                  >
                     <span class="mr-2">Submit</span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
