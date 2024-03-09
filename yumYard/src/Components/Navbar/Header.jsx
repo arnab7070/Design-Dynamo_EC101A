@@ -1,19 +1,28 @@
-import React, { useState } from "react";
+import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
+import {  Link } from "react-router-dom"; // Make sure to import Switch from 'react-router-dom'
+
 import images from "../../constants/images";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShoppingCart, faEnvelopeOpen, faTags, faBars, faAddressCard, faHouse } from "@fortawesome/free-solid-svg-icons";
-
+import {
+  faShoppingCart,
+  faEnvelopeOpen,
+  faTags,
+  faBars,
+  faAddressCard,
+  faHouse,
+} from "@fortawesome/free-solid-svg-icons";
+import Signup from "../SignUp";
+import Login from "../login";
 import "./Navbar.css";
 import Panel from "../Cart/Panel";
 //import useStore from "../Cart/store";
 
-
 const Header = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
 
-  const [showPanel, setShowPanel] = useState(false);
+  // const [showPanel, setShowPanel] = useState(false);
 
   const handleClick = (e) =>{
     e.preventDefault();
