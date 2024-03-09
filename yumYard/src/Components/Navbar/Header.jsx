@@ -227,7 +227,7 @@ const Header = () => {
         {user && (
           <>
           <img
-            src="https://docs.material-tailwind.com/img/face-2.jpg"
+            src={user.photoURL}
             alt="avatar"
             class="relative inline-block h-12 w-12 !rounded-full  object-cover object-center"
           />
