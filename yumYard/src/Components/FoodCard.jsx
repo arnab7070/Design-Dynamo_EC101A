@@ -28,7 +28,7 @@ const ProjectCard = ({ imgUrl, title, price, features }) => {
   const addObjectToList = useStore((state) => state.addObject);
 
   const handleSendData = () => {
-  const newObject = { title: title, quant: quantity, price: price, image: imgUrl };
+  const newObject = { title: title, quant: quantity, price: price, total: price * quantity, image: imgUrl };
   addObjectToList(newObject);
   };
 

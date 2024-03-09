@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
 import images from "../../constants/images";
@@ -13,12 +13,17 @@ import Panel from "../Cart/Panel";
 const Header = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
 
-  const [showPanel, setShowPanel] = useState(false);
+  // const [showPanel, setShowPanel] = useState(false);
 
-  const handleClick = (e) =>{
-    e.preventDefault();
-    setShowPanel(!showPanel);
-  };
+  // const handleClick = (e) =>{
+  //   e.preventDefault();
+  //   setShowPanel(!showPanel);
+  // };
+
+  // const [open, setOpen] = React.useState(false);
+ 
+  // const openDrawer = () => setOpen(true);
+  // const closeDrawer = () => setOpen(false);
 
   return (
     <nav className="app__navbar bg-gradient-to-r from-amber-200 to-yellow-300 overflow-x-hidden">
@@ -103,9 +108,9 @@ const Header = () => {
           </a>
         </li>
         <li className="p__opensans">
-          <a
+          {/* <a
             href="#_"
-            onClick={handleClick}
+            onClick={openDrawer}
             class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-yellow-600 rounded-xl group border-2 border-black"
           >
             <span class="absolute top-0 right-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-yellow-600 rounded group-hover:-mr-4 group-hover:-mt-4">
@@ -116,10 +121,10 @@ const Header = () => {
               <FontAwesomeIcon className="mr-2" icon={faShoppingCart} />
               Cart
             </span>
-          </a>
+          </a> */}
           
-          {showPanel &&
-          <Panel/>}
+          {/* {open && */}
+          <Panel/>
           
         </li>
       </ul>
