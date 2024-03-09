@@ -30,7 +30,7 @@ export const HeroSection = () => {
                       renderTrigger={() => (
                         <span>
                           <div
-                            className="inline-flex cursor-pointer rounded-full p-4 mt-1"
+                            className="inline-flex text-black font-bold cursor-pointer rounded-full p-4 mt-1"
                           >
                             Category
                             <img

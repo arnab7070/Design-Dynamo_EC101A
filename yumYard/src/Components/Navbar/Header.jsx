@@ -1,29 +1,33 @@
 import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
+import {  Link } from "react-router-dom"; // Make sure to import Switch from 'react-router-dom'
+
 import images from "../../constants/images";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShoppingCart, faEnvelopeOpen, faTags, faBars, faAddressCard, faHouse } from "@fortawesome/free-solid-svg-icons";
-
+import {
+  faShoppingCart,
+  faEnvelopeOpen,
+  faTags,
+  faBars,
+  faAddressCard,
+  faHouse,
+} from "@fortawesome/free-solid-svg-icons";
+import Signup from "../SignUp";
+import Login from "../login";
 import "./Navbar.css";
 import Panel from "../Cart/Panel";
 //import useStore from "../Cart/store";
-
 
 const Header = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
 
   // const [showPanel, setShowPanel] = useState(false);
 
-  // const handleClick = (e) =>{
-  //   e.preventDefault();
-  //   setShowPanel(!showPanel);
-  // };
-
-  // const [open, setOpen] = React.useState(false);
- 
-  // const openDrawer = () => setOpen(true);
-  // const closeDrawer = () => setOpen(false);
+  const handleClick = (e) =>{
+    e.preventDefault();
+    setShowPanel(!showPanel);
+  };
 
   return (
     <nav className="app__navbar bg-gradient-to-r from-amber-200 to-yellow-300 overflow-x-hidden">
@@ -108,9 +112,9 @@ const Header = () => {
           </a>
         </li>
         <li className="p__opensans">
-          {/* <a
+          <a
             href="#_"
-            onClick={openDrawer}
+            onClick={handleClick}
             class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-yellow-600 rounded-xl group border-2 border-black"
           >
             <span class="absolute top-0 right-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-yellow-600 rounded group-hover:-mr-4 group-hover:-mt-4">
@@ -121,10 +125,10 @@ const Header = () => {
               <FontAwesomeIcon className="mr-2" icon={faShoppingCart} />
               Cart
             </span>
-          </a> */}
+          </a>
           
-          {/* {open && */}
-          <Panel/>
+          {showPanel &&
+          <Panel/>}
           
         </li>
       </ul>
