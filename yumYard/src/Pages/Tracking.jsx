@@ -33,21 +33,27 @@ const TrackingPage = () => {
         {/* Order Details */}
         <div
           data-aos="flip-up"
-          className="bg-gray-100 shadow-md rounded-md p-6 mb-8"
-        >
+          className="bg-gray-100 shadow-md rounded-md p-6 mb-8">
           <h2 className="text-xl font-semibold mb-4">Order Details</h2>
           <div className="flex justify-between">
-            <p className="text-gray-700">Product Name</p>
-            <p className="text-gray-700">$99.99</p>
+
+            <div className="flex flex-col">
+              <p className="text-gray-700">Hyderabadi Chicken Biryani</p>
+
+
+              <p className="text-gray-700">Mutton Kosha</p>
+            </div>
+            <p className="text-gray-700">780.00</p>
+            <p className="text-gray-700">450.00</p>
           </div>
           <div className="flex justify-between">
             <p className="text-gray-700">Shipping</p>
-            <p className="text-gray-700">$9.99</p>
+            <p className="text-gray-700">40.00</p>
           </div>
           <hr className="my-2" />
           <div className="flex justify-between">
             <p className="text-lg font-semibold">Total</p>
-            <p className="text-lg font-semibold">$109.98</p>
+            <p className="text-lg font-semibold">820.00</p>
           </div>
         </div>
       </div>

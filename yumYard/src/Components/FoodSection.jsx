@@ -26,14 +26,6 @@ import pic20 from "../Images/non veg/pic10.jpg"
 
 const projectsData = [
   {
-    id: 0,
-    title: "Special Masala Dosa",
-    price: "150",
-    image: pic1,
-    tag: ["All", "Veg"],
-    features: ["South Indian", "Breakfast"],
-  },
-  {
     id: 1,
     title: "Matar Paneer",
     price: "220",
@@ -50,6 +42,14 @@ const projectsData = [
     features: ["Starter"],
   },
   {
+    id: 0,
+    title: "Special Masala Dosa",
+    price: "150",
+    image: pic1,
+    tag: ["All", "Veg"],
+    features: ["South Indian", "Breakfast"],
+  },
+  {
     id: 3,
     title: "Idli",
     price: "140",
@@ -57,14 +57,7 @@ const projectsData = [
     tag: ["All", "Veg"],
     features: ["South Indian", "Breakfast"],
   },
-  {
-    id: 4,
-    title: "Dhokla",
-    price: "120",
-    image: pic5,
-    tag: ["All", "Veg"],
-    features: ["Gujrati", "Breakfast"],
-  },
+
   {
     id: 5,
     title: "Fafda",
@@ -98,13 +91,14 @@ const projectsData = [
     features: ["Breakfast"],
   },
   {
-    id: 9,
-    title: "Samosa",
-    price: "40",
-    image: pic10,
+    id: 4,
+    title: "Dhokla",
+    price: "120",
+    image: pic5,
     tag: ["All", "Veg"],
-    features: ["Snacks"],
+    features: ["Gujrati", "Breakfast"],
   },
+
   {
     id: 10,
     title: "Mutton Kosha",
@@ -122,6 +116,14 @@ const projectsData = [
     features: ["Non Veg", "Main Course"],
   },
   {
+    id: 9,
+    title: "Samosa",
+    price: "40",
+    image: pic10,
+    tag: ["All", "Veg"],
+    features: ["Snacks"],
+  },
+  {
     id: 12,
     title: "Chicken Rogan Josh",
     price: "180",
@@ -129,14 +131,7 @@ const projectsData = [
     tag: ["All", "Non-Veg"],
     features: ["Non Veg", "Main Course"],
   },
-  {
-    id: 13,
-    title: "Pomplete Fish Roast",
-    price: "350",
-    image: pic14,
-    tag: ["All", "Non-Veg"],
-    features: ["Non Veg", "Main Course"],
-  },
+
   {
     id: 14,
     title: "Hyderabadi Chicken Biryani",
@@ -150,6 +145,14 @@ const projectsData = [
     title: "Mutton Rogan Josh",
     price: "400",
     image: pic16,
+    tag: ["All", "Non-Veg"],
+    features: ["Non Veg", "Main Course"],
+  },
+  {
+    id: 13,
+    title: "Pomplete Fish Roast",
+    price: "350",
+    image: pic14,
     tag: ["All", "Non-Veg"],
     features: ["Non Veg", "Main Course"],
   },
@@ -207,7 +210,7 @@ const FoodSection = () => {
 
   return (
     <section id="projects">
-      <h2 id='menu'className="text-center text-5xl font-bold text-orange-500 mt-4 mb-8 md:mb-12 pt-10">
+      <h2 id='menu' className="text-center text-5xl font-bold text-orange-500 mt-4 mb-8 md:mb-12 pt-10">
         What's On your Mind
       </h2>
       <div className="text-black flex flex-row justify-center items-center gap-2 py-6">
@@ -218,13 +221,13 @@ const FoodSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Veg"
-          isSelected={tag === "Veg"}
+          name="Non-Veg"
+          isSelected={tag === "Non-Veg"}
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Non-Veg"
-          isSelected={tag === "Non-Veg"}
+          name="Veg"
+          isSelected={tag === "Veg"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-4 gap-x-3 gap-y-8 md:gap-8 md:mx-10 mx-2">

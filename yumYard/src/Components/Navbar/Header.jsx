@@ -1,14 +1,16 @@
 import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import {Link} from "react-router-dom";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
 import { HiOutlineExclamationCircle } from "react-icons/hi";
 import { Button, Checkbox, Label, Modal, TextInput } from "flowbite-react";
 import { useState } from "react";
 import images from "../../constants/images";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { MdDeliveryDining } from "react-icons/md";
 import toast, { Toaster } from "react-hot-toast";
 import {
-  getAuth,signOut ,
+  getAuth, signOut,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   GoogleAuthProvider,
@@ -111,11 +113,11 @@ const Header = () => {
       setpassword("");
     }
   };
-  const logout=()=>{
+  const logout = () => {
     signOut(auth).then(() => {
       toast.success("SignOut Sucessfull");
     }).catch((error) => {
-        toast.error("SignOut unsuccessfull");
+      toast.error("SignOut unsuccessfull");
     });
   }
   const handleClick = (e) => {
@@ -223,18 +225,20 @@ const Header = () => {
           {/* {showPanel && */}
           <Panel />
         </li>
-        <li><Sidebar/></li>
+        <li><Sidebar /></li>
+        <li><Link to="/TrackingPage" ><MdDeliveryDining size={35} color="#7b3f00" />
+        </Link></li>
       </ul>
       <div className="app__navbar-login">
         {user && (
           <>
-          <img
-            src={user.photoURL}
-            alt="avatar"
-            class="relative inline-block h-12 w-12 !rounded-full  object-cover object-center"
-          />
-          <button onClick={logout}>
-           <a href="#_" class="relative inline-block text-lg group">
+            <img
+              src={user.photoURL}
+              alt="avatar"
+              class="relative inline-block h-12 w-12 !rounded-full  object-cover object-center"
+            />
+            <button onClick={logout}>
+              <a href="#_" class="relative inline-block text-lg group">
                 <span class="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
                   <span class="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
                   <span class="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gray-900 group-hover:-rotate-180 ease"></span>
@@ -245,7 +249,7 @@ const Header = () => {
                   data-rounded="rounded-lg"
                 ></span>
               </a>
-              </button>
+            </button>
           </>
         )}
         {!user && (
@@ -359,88 +363,88 @@ const Header = () => {
               </Modal.Body>
             </Modal>
             <div className="bg-orange-700 " />
-        <button onClick={() => setOpenModalsignup(true)}>
-          <a href="#_" class="relative inline-block text-lg group">
-            <span class="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
-              <span class="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
-              <span class="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gray-900 group-hover:-rotate-180 ease"></span>
-              <span class="relative">SignUp</span>
-            </span>
-            <span
-              class="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0"
-              data-rounded="rounded-lg"
-            ></span>
-          </a>
-        </button>
-        <Modal
-          show={openModalsignup}
-          size="md"
-          onClose={onCloseModalsignup}
-          popup
-        >
-          <Modal.Header />
-          <Modal.Body>
-            <div className="space-y-6">
-              <h3 className="text-xl font-medium text-gray-900 dark:text-white">
-                Sign up with our platform
-              </h3>
-              <div>
-                <div className="mb-2 block">
-                  <Label htmlFor="email" value="Your email" />
+            <button onClick={() => setOpenModalsignup(true)}>
+              <a href="#_" class="relative inline-block text-lg group">
+                <span class="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
+                  <span class="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
+                  <span class="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gray-900 group-hover:-rotate-180 ease"></span>
+                  <span class="relative">SignUp</span>
+                </span>
+                <span
+                  class="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0"
+                  data-rounded="rounded-lg"
+                ></span>
+              </a>
+            </button>
+            <Modal
+              show={openModalsignup}
+              size="md"
+              onClose={onCloseModalsignup}
+              popup
+            >
+              <Modal.Header />
+              <Modal.Body>
+                <div className="space-y-6">
+                  <h3 className="text-xl font-medium text-gray-900 dark:text-white">
+                    Sign up with our platform
+                  </h3>
+                  <div>
+                    <div className="mb-2 block">
+                      <Label htmlFor="email" value="Your email" />
+                    </div>
+                    <TextInput
+                      id="email"
+                      placeholder="name@company.com"
+                      value={email}
+                      onChange={(event) => setEmail(event.target.value)}
+                      required
+                    />
+                  </div>
+                  <div>
+                    <div className="mb-2 block">
+                      <Label htmlFor="password" value="Create your password" />
+                    </div>
+                    <TextInput
+                      id="password"
+                      type="password"
+                      required
+                      value={password}
+                      onChange={(event) => setpassword(event.target.value)}
+                    />
+                  </div>
+                  <div>
+                    <div className="mb-2 block">
+                      <Label htmlFor="password" value="Confirm your  password" />
+                    </div>
+                    <TextInput
+                      id="password"
+                      type="password"
+                      required
+                      value={confirmpassword}
+                      onChange={(event) => setconfirmpassword(event.target.value)}
+                    />
+                  </div>
+                  <div className="flex justify-between">
+                    <div className="flex items-center gap-2">
+                      <Checkbox id="remember" />
+                      <Label htmlFor="remember">Remember me</Label>
+                    </div>
+                  </div>
+                  <div className="w-full">
+                    <Button
+                      className="bg-orange-400"
+                      onClick={handleonSubmitsignup}
+                    >
+                      Sign up with your account
+                    </Button>
+                  </div>
                 </div>
-                <TextInput
-                  id="email"
-                  placeholder="name@company.com"
-                  value={email}
-                  onChange={(event) => setEmail(event.target.value)}
-                  required
-                />
-              </div>
-              <div>
-                <div className="mb-2 block">
-                  <Label htmlFor="password" value="Create your password" />
-                </div>
-                <TextInput
-                  id="password"
-                  type="password"
-                  required
-                  value={password}
-                  onChange={(event) => setpassword(event.target.value)}
-                />
-              </div>
-              <div>
-                <div className="mb-2 block">
-                  <Label htmlFor="password" value="Confirm your  password" />
-                </div>
-                <TextInput
-                  id="password"
-                  type="password"
-                  required
-                  value={confirmpassword}
-                  onChange={(event) => setconfirmpassword(event.target.value)}
-                />
-              </div>
-              <div className="flex justify-between">
-                <div className="flex items-center gap-2">
-                  <Checkbox id="remember" />
-                  <Label htmlFor="remember">Remember me</Label>
-                </div>
-              </div>
-              <div className="w-full">
-                <Button
-                  className="bg-orange-400"
-                  onClick={handleonSubmitsignup}
-                >
-                  Sign up with your account
-                </Button>
-              </div>
-            </div>
-          </Modal.Body>
-        </Modal>
+              </Modal.Body>
+            </Modal>
           </>
         )}
 
-        
+
       </div>
       <div className="app__navbar-smallscreen">
         <GiHamburgerMenu

@@ -4,7 +4,7 @@ import { Label, Radio } from 'flowbite-react';
 
 function Form() {
   return (
-    <fieldset className="flex max-w-md flex-col gap-4">
+    <fieldset className="pl-5 flex max-w-md flex-col gap-4">
       <legend className="mb-4">Choose your favorite country</legend>
       <div className="flex items-center gap-2">
         <Radio id="united-state" name="countries" value="USA" defaultChecked />
