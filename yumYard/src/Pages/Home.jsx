@@ -25,7 +25,7 @@ export const Home = () => {
                 <ContactForm />
                 <Testimonials/>
                 <FooterComponent/>
-                <TestCart/>
+                {/* <TestCart/> */}
                  
             </div>
         </div>
