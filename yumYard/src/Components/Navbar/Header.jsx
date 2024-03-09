@@ -1,13 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
+import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
+import {  Link } from "react-router-dom"; // Make sure to import Switch from 'react-router-dom'
+
 import images from "../../constants/images";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShoppingCart, faEnvelopeOpen, faTags, faBars, faAddressCard, faHouse } from "@fortawesome/free-solid-svg-icons";
+import {
+  faShoppingCart,
+  faEnvelopeOpen,
+  faTags,
+  faBars,
+  faAddressCard,
+  faHouse,
+} from "@fortawesome/free-solid-svg-icons";
+import Signup from "../SignUp";
+import Login from "../login";
 import "./Navbar.css";
 import Panel from "../Cart/Panel";
 //import useStore from "../Cart/store";
-import { Button, Checkbox, Label, Modal, TextInput } from 'flowbite-react';
+
 const Header = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
 
@@ -101,7 +113,7 @@ const Header = () => {
           </a>
         </li>
         <li className="p__opensans">
-          <a
+          {/* <a
             href="#_"
             onClick={handleClick}
             class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-yellow-600 rounded-xl group border-2 border-black"
@@ -114,10 +126,10 @@ const Header = () => {
               <FontAwesomeIcon className="mr-2" icon={faShoppingCart} />
               Cart
             </span>
-          </a>
+          </a> */}
           
-          {showPanel &&
-          <Panel/>}
+          {/* {showPanel && */}
+          <Panel/>
           
         </li>
       </ul>
