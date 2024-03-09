@@ -4,12 +4,10 @@ import { MdOutlineRestaurantMenu } from "react-icons/md";
 import images from "../../constants/images";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart, faEnvelopeOpen, faTags, faBars, faAddressCard, faHouse } from "@fortawesome/free-solid-svg-icons";
-
 import "./Navbar.css";
 import Panel from "../Cart/Panel";
 //import useStore from "../Cart/store";
-
-
+import { Button, Checkbox, Label, Modal, TextInput } from 'flowbite-react';
 const Header = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
 

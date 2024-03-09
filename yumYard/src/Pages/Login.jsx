@@ -1,10 +1,19 @@
 import React, { useState } from 'react';
 import { app } from "../firebase"
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { Button, Checkbox, Label, Modal, TextInput } from 'flowbite-react';
+
+
 
 export const Login = () => {
-    const auth = getAuth();
+    const [openModal, setOpenModal] = useState(false);
     const [email, setEmail] = useState('');
+  
+    function onCloseModal() {
+      setOpenModal(false);
+      setEmail('');
+    }
+    const auth = getAuth();
     const [password, setPassword] = useState('');
 
     const handleSubmit = (event) => {
