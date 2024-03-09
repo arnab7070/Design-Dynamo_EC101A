@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
 import {  Link } from "react-router-dom"; // Make sure to import Switch from 'react-router-dom'
@@ -22,7 +23,7 @@ import Panel from "../Cart/Panel";
 const Header = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
 
-  // const [showPanel, setShowPanel] = useState(false);
+  const [showPanel, setShowPanel] = useState(false);
 
   const handleClick = (e) =>{
     e.preventDefault();
