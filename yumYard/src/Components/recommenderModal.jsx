@@ -67,8 +67,11 @@ export default function Sidebar() {
         open={open}
         placement="left"
         onClose={closeDrawer}
-        className="p-4 z-20"
+        className="p-4 z-20 overflow-y-scroll"
       >
+        <div className="mb-5 font-bold text-yellow-900 text-xl">
+          What's On Your Mind
+        </div>
         <div className="mb-6 flex items-center justify-between text-yellow-900">
           <FormControl>
             <FormLabel id="demo-row-radio-buttons-group-label">
@@ -208,7 +211,11 @@ export default function Sidebar() {
               />
             </RadioGroup>
           </FormControl>
+
         </div>
+        <button class="bg-yellow-500 hover:scale-120  font-bold text-black transition all duration-500 hover:bg-yellow-400 border border-orange-500 px-6 py-3 rounded-md">
+          Submit
+        </button>
       </Drawer>
     </React.Fragment>
   );
