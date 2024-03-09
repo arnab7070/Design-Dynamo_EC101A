@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Navbar } from '../Components/Navbar'
 import { HeroSection } from '../Components/HeroSection'
 import ContactForm from "../Components/ContactForm"
@@ -10,8 +10,12 @@ import FoodSection from '../Components/FoodSection'
 import Testimonials from '../Components/Testimonials'
 import AboutUs from '../Components/AboutUs'
 import TestCart from '../Components/TestCart'
+import FloatingButton from '../Components/FloatingButton';
+
+
 
 export const Home = () => {
+    
     return (
         <div >
             <div className="main">
@@ -26,6 +30,7 @@ export const Home = () => {
                 <Testimonials/>
                 <FooterComponent/>
                 <TestCart/>
+                <FloatingButton/>
             </div>
         </div>
     )

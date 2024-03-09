@@ -18,6 +18,7 @@ import Signup from "../SignUp";
 import Login from "../login";
 import "./Navbar.css";
 import Panel from "../Cart/Panel";
+import Sidebar from "../recommenderModal";
 //import useStore from "../Cart/store";
 
 const Header = () => {
@@ -132,6 +133,7 @@ const Header = () => {
           <Panel/>
           
         </li>
+        <li><Sidebar/></li>
       </ul>
       <div className="app__navbar-login">
         <a href="#_" class="relative inline-block text-lg group">
