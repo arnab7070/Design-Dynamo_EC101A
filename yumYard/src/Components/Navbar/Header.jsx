@@ -13,7 +13,9 @@ import {
   signInWithEmailAndPassword,
   GoogleAuthProvider,
   signInWithPopup,
+  GithubAuthProvider,
 } from "firebase/auth";
+import {app} from "../../firebase";
 import {
   faShoppingCart,
   faEnvelopeOpen,
@@ -24,7 +26,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.css";
 import Panel from "../Cart/Panel";
+
+
 const Header = () => {
+  const auth = getAuth();
   const [toggleMenu, setToggleMenu] = React.useState(false);
   const [confirmpassword, setconfirmpassword] = useState("");
   const [openModal, setOpenModal] = useState(false);
@@ -32,6 +37,33 @@ const Header = () => {
   const [openModalsignup, setOpenModalsignup] = useState(false);
   const [password, setpassword] = useState("");
   const [email, setEmail] = useState("");
+  const googleLogin = () => {
+    const provider = new GoogleAuthProvider();
+    signInWithPopup(auth, provider).then((userCredential)=>toast.success("Logged in successfully"))
+  }
+  const githubLogin = () => {
+    const provider = new GithubAuthProvider();
+    signInWithPopup(auth, provider)
+  .then((result) => {
+    // This gives you a GitHub Access Token. You can use it to access the GitHub API.
+    const credential = GithubAuthProvider.credentialFromResult(result);
+    const token = credential.accessToken;
+    toast.success("Logged In sucessfully.")
+    // The signed-in user info.
+    const user = result.user;
+    // IdP data available using getAdditionalUserInfo(result)
+    // ...
+  }).catch((error) => {
+    // Handle Errors here.
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // The email of the user's account used.
+    const email = error.customData.email;
+    // The AuthCredential type that was used.
+    const credential = GithubAuthProvider.credentialFromError(error);
+    // ...
+  });
+  }
   function onCloseModalsignup() {
     setOpenModalsignup(false);
     setEmail("");
@@ -45,19 +77,22 @@ const Header = () => {
     setconfirmpassword("");
   }
   const handleonSubmit = () => {
-    toast.success("Logged in SuccessFully");
-    console.log(email);
-    console.log(password);
+    signInWithEmailAndPassword(auth, email, password).then((userCredential)=>toast.success("Logged in SuccessFully")).catch((error)=>toast.error("Password not matched or User not registered"));
+    // console.log(email);
+    // console.log(password);
     setEmail("");
     setpassword("");
   };
-  const handleonSubmitsignup = () => {
-    console.log(email);
-    console.log(password);
-    console.log(confirmpassword);
+  
+  const handleonSubmitsignup = (e) => {
+    e.preventDefault()
+    // console.log(email);
+    // console.log(password);
+    // console.log(confirmpassword);
     if (password !== confirmpassword) {
       toast.error("Passwords do not match");
     } else {
+      createUserWithEmailAndPassword(auth, email, password).then((userCredential) => toast.success("User Registered"))
       setconfirmpassword("");
       setEmail("");
       setpassword("");
@@ -245,6 +280,7 @@ const Header = () => {
               </div>
               <div className="flex flex-col gap-y-5 justify-center items-center">
               <button
+                onClick={githubLogin}
                 type="button"
                 class="py-2 px-4 max-w-md flex justify-center items-center bg-gray-600 hover:bg-gray-700 focus:ring-gray-500 focus:ring-offset-gray-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
               >
@@ -261,7 +297,7 @@ const Header = () => {
                 Sign in with GitHub
               </button>
              
-                <button class="px-4 py-2 w-full border justify-center flex gap-2 border-slate-200 dark:border-slate-700 rounded-lg text-slate-700 dark:text-slate-200 hover:border-slate-400 dark:hover:border-slate-500 hover:text-slate-900 dark:hover:text-slate-300 hover:shadow transition duration-150">
+                <button onClick={googleLogin} class="px-4 py-2 w-full border justify-center flex gap-2 border-slate-200 dark:border-slate-700 rounded-lg text-slate-700 dark:text-slate-200 hover:border-slate-400 dark:hover:border-slate-500 hover:text-slate-900 dark:hover:text-slate-300 hover:shadow transition duration-150">
                   <img
                     class="w-6 h-6"
                     src="https://www.svgrepo.com/show/475656/google-color.svg"
