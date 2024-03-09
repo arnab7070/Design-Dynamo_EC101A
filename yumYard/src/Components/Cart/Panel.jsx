@@ -79,7 +79,7 @@ export default function Panel() {
   const handlePayment = async () => {
     console.log("Payment Initiated");
     try {
-      const res = await fetch('https://yumyard-vert.vercel.app/pay', {
+      const res = await fetch('http://localhost:3001/pay', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
