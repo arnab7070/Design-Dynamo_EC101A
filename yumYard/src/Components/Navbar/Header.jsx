@@ -356,7 +356,7 @@ const Header = () => {
                         loading="lazy"
                         alt="google logo"
                       />
-                      <span>Login with Google</span>
+                      <span>Sign In with Google</span>
                     </button>
                   </div>
                 </div>
