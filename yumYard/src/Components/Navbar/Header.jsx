@@ -113,7 +113,7 @@ const Header = () => {
           </a>
         </li>
         <li className="p__opensans">
-          <a
+          {/* <a
             href="#_"
             onClick={handleClick}
             class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-yellow-600 rounded-xl group border-2 border-black"
@@ -126,10 +126,10 @@ const Header = () => {
               <FontAwesomeIcon className="mr-2" icon={faShoppingCart} />
               Cart
             </span>
-          </a>
+          </a> */}
           
-          {showPanel &&
-          <Panel/>}
+          {/* {showPanel && */}
+          <Panel/>
           
         </li>
       </ul>
