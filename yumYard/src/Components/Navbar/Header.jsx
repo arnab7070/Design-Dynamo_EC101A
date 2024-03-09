@@ -26,6 +26,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.css";
 import Panel from "../Cart/Panel";
+import Sidebar from "../recommenderModal";
 
 const Header = () => {
   const auth = getAuth();
@@ -222,6 +223,7 @@ const Header = () => {
           {/* {showPanel && */}
           <Panel />
         </li>
+        <li><Sidebar/></li>
       </ul>
       <div className="app__navbar-login">
         {user && (
