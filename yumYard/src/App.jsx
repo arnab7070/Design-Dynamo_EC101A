@@ -4,6 +4,7 @@ import { Home } from './Pages/Home';
 import { Login } from "./Pages/Login";
 import SignUp from "./Components/SignUp";
 import TrackingPage from "../src/Pages/Tracking";
+import { Toaster } from "react-hot-toast";
 function App() {
   return (
   <Router>
@@ -12,7 +13,7 @@ function App() {
         <Routes>
         <Route path="/" element={<Home />} />
         </Routes>
-        
+        <Toaster />
       </div>
 
       {/* Wrap all Route components with the Routes component */}

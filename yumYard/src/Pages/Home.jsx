@@ -29,8 +29,8 @@ export const Home = () => {
                 <ContactForm />
                 <Testimonials/>
                 <FooterComponent/>
-                <TestCart/>
-                <FloatingButton/>
+                {/* <TestCart/> */}
+                 
             </div>
         </div>
     )
