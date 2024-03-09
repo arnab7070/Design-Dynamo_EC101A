@@ -1,6 +1,6 @@
 import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
 import { HiOutlineExclamationCircle } from "react-icons/hi";
 import { Button, Checkbox, Label, Modal, TextInput } from "flowbite-react";

@@ -20,7 +20,7 @@ const TrackingPage = () => {
           className="bg-gray-100 shadow-md rounded-md p-6 mb-8"
         >
           <h2 className="text-xl font-semibold mb-4">Billing Address</h2>
-          <p className="text-gray-700">123 Main Street, Cityville, ABC</p>
+          <p className="text-gray-700">18/B/1 Barabagan Lane,Mallickpara,Serampore,Hooghly</p>
         </div>
         {/* Payment Details */}
         <div
@@ -28,6 +28,9 @@ const TrackingPage = () => {
           className="bg-gray-100 shadow-md rounded-md p-6 mb-8"
         >
           <h2 className="text-xl font-semibold mb-4">Payment Details</h2>
+          <p className="text-gray-700">Transaction ID: pay_NkE1UBb5cXVHdj</p>
+          <p className="text-gray-700">Receipt ID: KHR58V0bC</p>
+          {/*  */}
           {/* Add payment details here */}
         </div>
         {/* Order Details */}
@@ -43,8 +46,11 @@ const TrackingPage = () => {
 
               <p className="text-gray-700">Mutton Kosha</p>
             </div>
-            <p className="text-gray-700">780.00</p>
+            <div className="flex flex-col">
             <p className="text-gray-700">450.00</p>
+            <p className="text-gray-700">340.00</p>
+            </div>
+           
           </div>
           <div className="flex justify-between">
             <p className="text-gray-700">Shipping</p>
@@ -78,7 +84,7 @@ const TrackingPage = () => {
             <div class="flex items-center justify-between space-x-2 mb-1">
               <div class="font-bold text-slate-900">Order Placed</div>
               <time class="font-caveat font-medium text-indigo-500">
-                08/06/2023
+                09/03/2024 4:42 PM
               </time>
             </div>
             <div class="text-slate-500 ">
@@ -105,7 +111,7 @@ const TrackingPage = () => {
             <div class="flex items-center justify-between space-x-2 mb-1">
               <div class="font-bold text-slate-900">Order Shipped</div>
               <time class="font-caveat font-medium text-indigo-500">
-                09/06/2023
+                09/03/2023 4:50 PM
               </time>
             </div>
             <div class="text-slate-500">
@@ -133,7 +139,7 @@ const TrackingPage = () => {
             <div class="flex items-center justify-between space-x-2 mb-1">
               <div class="font-bold text-slate-900">In Transit</div>
               <time class="font-caveat font-medium text-indigo-500">
-                10/06/2023
+                09/03/2024 5:00 PM
               </time>
             </div>
             <div class="text-slate-500">
@@ -159,9 +165,9 @@ const TrackingPage = () => {
           </div>
           <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
             <div class="flex items-center justify-between space-x-2 mb-1">
-              <div class="font-bold text-slate-900">Out of Delivery</div>
+              <div class="font-bold text-slate-900">Out for Delivery</div>
               <time class="font-caveat font-medium text-indigo-500">
-                12/06/2023
+                9/03/2024 5:15 PM
               </time>
             </div>
             <div class="text-slate-500">
@@ -186,7 +192,7 @@ const TrackingPage = () => {
             <div class="flex items-center justify-between space-x-2 mb-1">
               <div class="font-bold text-slate-900">Delivered</div>
               <time class="font-caveat font-medium text-amber-500">
-                Exp. 12/08/2023
+                Expected. 9/03/2024 5:30 PM
               </time>
             </div>
             <div class="text-slate-500">

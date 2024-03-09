@@ -12,11 +12,11 @@ import { getDatabase, ref, set } from "firebase/database";
 import { getAuth } from "firebase/auth";
 import { app } from "../../firebase";
 const auth = getAuth();
-const user = auth.currentUser;
+// const user = auth.currentUser;
 
 function writeOrderData(response) {
   const db = getDatabase();
-  set(ref(db, `users/${user.uid}/orders` + response.razorpay_payment_id), {
+  set(ref(db, `users/orders` + response.razorpay_payment_id), {
     signature: response.razorpay_signature,
     order_id: response.razorpay_order_id
   });
@@ -45,8 +45,8 @@ export default function Panel() {
       key: "rzp_test_DYIiJ7t0qCywQm",
       currency: data.currency,
       amount: data.amount,
-      name: "Learning To Code Online",
-      description: "Test Wallet Transaction",
+      name: "Yumyard Online Payment",
+      description: "Wallet Transaction",
       image: "http://localhost:1337/logo.png",
       order_id: data.id,
       handler: function (response) {
