@@ -26,7 +26,7 @@ export const Home = () => {
                 <Testimonials/>
                 <FooterComponent/>
                 <TestCart/>
-            </div>
+             </div>
         </div>
     )
 }
