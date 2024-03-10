@@ -45,9 +45,9 @@ export default function Panel() {
       key: "rzp_test_DYIiJ7t0qCywQm",
       currency: data.currency,
       amount: data.amount,
-      name: "Yumyard Online Payment",
+      name: "Yumyard Payment",
       description: "Wallet Transaction",
-      image: "http://localhost:1337/logo.png",
+      image: "https://yumyard-vert.vercel.app/static/media/grechit.04cc4aa31fca51b2d44f.jpg",
       order_id: data.id,
       handler: function (response) {
         writeOrderData(response);
@@ -79,7 +79,7 @@ export default function Panel() {
   const handlePayment = async () => {
     console.log("Payment Initiated");
     try {
-      const res = await fetch('http://localhost:3001/pay', {
+      const res = await fetch('https://server-blond-pi.vercel.app/api/pay', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -158,7 +158,7 @@ export default function Panel() {
 
         </div>
         <div className="flex gap-2">
-          <Button size="sm" variant="outlined">
+          <Button size="lg" variant="text" disabled>
             Total Amount: ₹ {totalPay}
           </Button>
           <Button onClick={handlePayment} size="sm">Pay Now</Button>

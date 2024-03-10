@@ -56,7 +56,7 @@ const ServiceItem = ({ title, description, icon: Icon, color }) => {
             {Icon && <Icon className="absolute top-0 left-0 transform -translate-x-1/3 -translate-y-1/2 h-12 w-12" />}
             <h2 data-aos="fade-right" className="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">{title}</h2>
             <p data-aos="fade-right" className="leading-relaxed text-base text-gray-700 mb-4">{description}</p>
-            <button data-aos="fade-down" className={`bg-${color}-500 text-white font-semibold py-2 px-4 rounded-lg transition duration-300 ease-in-out`}>Learn More</button>
+            <button className={`bg-${color}-500 text-white font-semibold py-2 px-4 rounded-lg transition duration-300 ease-in-out`}>Learn More</button>
         </div>
     );
 

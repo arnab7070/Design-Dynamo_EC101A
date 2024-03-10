@@ -61,7 +61,7 @@ const LearningGrid = () => {
         return (
           <div
             key={index}
-            data-aos={`${index%2 === 1 ? "fade-up" : "fade-down"}`}
+            data-aos={`${index%2 === 1 ? "flip-left" : "flip-right"}`}
             className={`${index === 0 && "lg:col-span-2 lg:h-[280px] p-5"}
                 ${
                   card.order % 2 === 1

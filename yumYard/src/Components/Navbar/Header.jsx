@@ -126,7 +126,7 @@ const Header = () => {
   };
 
   return (
-    <nav className="app__navbar bg-gradient-to-r from-amber-200 to-yellow-300 overflow-x-hidden">
+    <nav className="app__navbar sticky top-0 z-50 bg-gradient-to-r from-amber-200 to-yellow-300 overflow-x-hidden">
       <div className="app__navbar-logo">
         <img src={images.gericht} alt="app__logo" />
       </div>
@@ -462,9 +462,9 @@ const Header = () => {
             <ul className="app__navbar-smallscreen_links w-full">
               <li>
                 <a
-                  href="#home"
+                  href="#"
                   onClick={() => setToggleMenu(false)}
-                  className="font-extrabold"
+                  className="font-extrabold no-underline"
                 >
                   Home
                 </a>
@@ -473,7 +473,7 @@ const Header = () => {
                 <a
                   href="#about"
                   onClick={() => setToggleMenu(false)}
-                  className="font-extrabold"
+                  className="font-extrabold no-underline"
                 >
                   About
                 </a>
@@ -482,28 +482,33 @@ const Header = () => {
                 <a
                   href="#menu"
                   onClick={() => setToggleMenu(false)}
-                  className="font-extrabold"
+                  className="font-extrabold no-underline"
                 >
                   Menu
                 </a>
               </li>
               <li>
                 <a
-                  href="#awards"
+                  href="#price"
                   onClick={() => setToggleMenu(false)}
-                  className="font-extrabold"
+                  className="font-extrabold no-underline"
                 >
-                  Awards
+                  Pricing
                 </a>
               </li>
               <li>
                 <a
                   href="#contact"
                   onClick={() => setToggleMenu(false)}
-                  className="font-extrabold"
+                  className="font-extrabold no-underline"
                 >
                   Contact
                 </a>
+              </li>
+              <li className="flex justify-around">
+                <Panel />
+                <Sidebar />
+                {/* <Link to="/TrackingPage" ><MdDeliveryDining size={35} color="#7b3f00" /></Link> */}
               </li>
             </ul>
           </div>

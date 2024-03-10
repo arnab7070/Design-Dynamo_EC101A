@@ -8,7 +8,7 @@ const PricingCard = () => {
             {
                 offset: 100,
                 duration: 400,
-                easing: 'ease-in-back',
+                easing: 'ease-in',
             }
         );
     }, [])
@@ -16,7 +16,7 @@ const PricingCard = () => {
     return (
         <section id='price'class="text-gray-600 body-font overflow-hidden">
             <div class="container px-5 py-24 mx-auto">
-                <div data-aos="zoom-in-down" class="flex flex-col text-center w-full mb-20">
+                <div data-aos="zoom-in" class="flex flex-col text-center w-full mb-20">
                     <h1 class="sm:text-4xl text-3xl capitalize font-medium title-font mb-2 text-orange-500">Unlock your perfect food experience</h1>
                     <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">Choose the plan that fits your cravings.</p>
                     {/* <div class="flex mx-auto border-2 border-orange-500 rounded overflow-hidden mt-6">
