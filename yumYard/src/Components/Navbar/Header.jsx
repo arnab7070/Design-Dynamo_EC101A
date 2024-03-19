@@ -106,6 +106,10 @@ const Header = () => {
     } else {
       createUserWithEmailAndPassword(auth, email, password).then(
         (userCredential) => toast.success("User Registered")
+        
+      )
+      .catch((error) =>
+        toast.error("Invalid or Empty Email")
       );
       onCloseModalsignup();
 
